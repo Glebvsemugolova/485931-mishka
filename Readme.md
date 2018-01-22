@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Глеб Винокуров](https://up.htmlacademy.ru/adaptive/13/user/485931).
-* Наставник: `Неизвестно`.
+* Наставник: [Рашид Шамсудинов](https://htmlacademy.ru/profile/id445445).
 
 ---
 
