@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Интеренет-магазин «Мишка»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="catalog-main">
+      <h1 class="catalog-main__title">Каталог товаров</h1>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <h2 class="visually-hidden">Список товаров</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <img src="#" width="260" height="195" class="catalog__product-image">
+              <h3 class="catalog__product-title">Зайчик-попрыгайчик</h3>
+              <span class="catalog__product-feature">Рост 30 см, вес 200г</span>
+              <hr>
+              <span class="catalog__product-price">1200 руб.</span>
+            </li>
+            <li class="catalog__item">
+              <img src="#" width="260" height="195" class="catalog__product-image">
+              <h3 class="catalog__product-title">Корзинка для белья</h3>
+              <span class="catalog__product-feature">Диаметр 15 см, высота 10 см</span>
+              <hr>
+              <span class="catalog__product-price">690 руб.</span>
+            </li>
+            <li class="catalog__item">
+              <img src="#" width="260" height="195" class="catalog__product-image">
+              <h3 class="catalog__product-title">Большая корзинка для игрушек</h3>
+              <span class="catalog__product-feature">Диаметр 30 см, высота 30 см</span>
+              <hr>
+              <span class="catalog__product-price">1500 руб.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <article class="production-process">
+        <div class="production-process__wrapper">
+          <h2 class="production-process__title">Процесс производства</h2>
+          <video class="production-process__video" poster="#" width="260" height="150">
+            <source src="#">
+          </video>
+          <p class="production-process__description">
+            По просьбам наших<br>
+            любимых фолловеров мы<br>
+            сняли для вас подробное<br>
+            видео о том, как появляются<br>
+            наши товары.
+          </p>
+          <button type="button" class="production-process__order button">Сделать заказ</button>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--instagram">Мы в Инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter">Мы в Твитере</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
+          <a class="copyright__link" href="#">
+            <img alt="HTML Academy" src="#" width="27" height="34">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal to-basket">
+      <div class="to-basket__wrapper">
+        <h2 class="to-basket__title">Добавить в корзину</h2>
+        <span class="to-basket__subtitle">Выберет размер:</span>
+        <ul class="to-basket__list">
+          <li class="to-basket_item">S</li>
+          <li class="to-basket_item">M</li>
+          <li class="to-basket_item">L</li>
+        </ul>
+        <button type="button" class="to-basket__add button">Добавить</button>
+      </div>
+    </section>
+
+  </body>
+</html>

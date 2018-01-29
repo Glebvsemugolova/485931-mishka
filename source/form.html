@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Интеренет-магазин «Мишка»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="main__title">Вязание на заказ</h1>
+      <section class="order">
+        <h2 class="visually-hidden">Форма заказа товаров</h2>
+        <p class="order__description">
+          Мы будем рады воплотить в жизнь<br>
+          ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,<br>
+          чтобы уточнить детали.
+        </p>
+        <form class="order__form order-form">
+          <fieldset class="order-form__type-product">
+            <legend>Тип</legend>
+            <p class="order-form__interior-item order__interior-item">
+              <input type="radio" id="interior-item" class="order-form__radio-btn">
+              <label class="form__title-radio-btn" for="interior-item">Аксессуар для интерьера</label>
+            </p>
+            <p class="order-form__home-toy order__home-toy">
+              <input type="radio" id="home-toy" class="order-form__radio-btn">
+              <label class="form__title-radio-btn" for="home-toy">Домашняя игрушка</label>
+            </p>
+          </fieldset>
+
+          <fieldset class="order-form__color-product">
+            <legend>Цвет</legend>
+            <p class="order-form__color order__color">
+              <input type="checkbox" id="white" class="order-form__checkbox">
+              <label class="order-form__title-radio-btn" for="white">Белый</label>
+            </p>
+            <p class="order-form__color order__color">
+              <input type="checkbox" id="grey" class="order-form__checkbox">
+              <label class="order-form__title-radio-btn" for="grey">Серый</label>
+            </p>
+            <p class="order-form__color order__color">
+              <input type="checkbox" id="tiffani" class="order-form__checkbox">
+              <label class="order-form__title-radio-btn" for="tiffani">«Тиффани»</label>
+            </p>
+            <p class="order-form_color order__color">
+              <input type="checkbox" id="black" class="order-form__checkbox">
+              <label class="order-form__title-radio-btn" for="black">Черный</label>
+            </p>
+            <p class="forder-form__color order__color">
+              <input type="checkbox" id="pink" class="order-form__checkbox">
+              <label class="order-form__title-radio-btn" for="pink">Розовый</label>
+            </p>
+            <p class="order-form__color order__color">
+              <input type="checkbox" id="orange" class="order-form__checkbox">
+              <label class="order-form__title-radio-btn" for="orange">Оранжевый</label>
+            </p>
+          </fieldset>
+
+          <fieldset class="order-form__about-client">
+            <legend>ФИО</legend>
+            <label for="name">Имя:</label>
+            <p>
+              <input type="text" placeholder="Введите ваше имя*" id="name" class="order-form__field">
+            </p>
+            <label for="surname">Фамилия:</label>
+            <p>
+              <input type="text" placeholder="Введите вашу фамилию*" id="surname" class="order-form__field">
+            </p>
+            <label for="patronymic">Отчество:</label>
+            <p>
+              <input type="text" placeholder="Отчество, если желаете" id="patronymic" class="order-form__field">
+            </p>
+          </fieldset>
+
+          <fieldset class="order-form__telephone-number">
+            <legend>Тел</legend>
+            <input type="tel" placeholder="+7 XXX XX XX*" class="order-form__field">
+          </fieldset>
+
+          <fieldset class="form__e-mail">
+            <legend>E-mail</legend>
+            <input type="email" placeholder="Ваш Email*" class="order-form__field">
+          </fieldset>
+
+          <fieldset class="form__wishes">
+            <legend>Доп</legend>
+            <textarea placeholder="Опишите все ваши пожелания к заказу" class="order-form__textarea"></textarea>
+          </fieldset>
+
+          <small class="class="order__notice"">*Поля обязательны для заполнения</small>
+          <button type="submit" class="class="order-form__to-order button"">Отправить заказ</button>
+
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--instagram">Мы в Инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter">Мы в Твитере</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
+          <a class="copyright__link" href="#">
+            <img alt="HTML Academy" src="#" width="27" height="34">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
