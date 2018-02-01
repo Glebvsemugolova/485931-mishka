@@ -1,0 +1,26 @@
+.catalog {
+
+}
+
+.catalog__list {
+  @include zero-spacing;
+}
+
+.catalog__item {
+  margin-top: 30px;
+  border: 1px solid #ececec;
+}
+
+.catalog__info {
+  padding: 32px 27px 30px 28px;
+}
+
+.catalog__product-title {
+  @include zero-spacing;
+  @include text(17px,24px,bold);
+}
+
+.catalog__product-feature {
+  @include text(13px,30px);
+  color: #444444;
+}

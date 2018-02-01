@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Интеренет-магазин «Мишка»">
+        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интеренет-магазин «Мишка»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -31,7 +32,9 @@
     </header>
 
     <main class="main">
-      <h1 class="main__title">Вязание на заказ</h1>
+      <div class="main__title">
+        <h1>Вязание на заказ</h1>
+      </div>
       <section class="order">
         <h2 class="visually-hidden">Форма заказа товаров</h2>
         <p class="order__description">
@@ -43,7 +46,7 @@
           <fieldset class="order-form__type-product">
             <legend>Тип</legend>
             <p class="order-form__interior-item order__interior-item">
-              <input type="radio" id="interior-item" class="order-form__radio-btn">
+              <input checked type="radio" id="interior-item" class="order-form__radio-btn">
               <label class="form__title-radio-btn" for="interior-item">Аксессуар для интерьера</label>
             </p>
             <p class="order-form__home-toy order__home-toy">
@@ -54,27 +57,27 @@
 
           <fieldset class="order-form__color-product">
             <legend>Цвет</legend>
-            <p class="order-form__color order__color">
-              <input type="checkbox" id="white" class="order-form__checkbox">
+            <p class="order-form__color">
+              <input checked type="checkbox" id="white" class="order-form__checkbox">
               <label class="order-form__title-radio-btn" for="white">Белый</label>
             </p>
-            <p class="order-form__color order__color">
-              <input type="checkbox" id="grey" class="order-form__checkbox">
+            <p class="order-form__color">
+              <input checked type="checkbox" id="grey" class="order-form__checkbox">
               <label class="order-form__title-radio-btn" for="grey">Серый</label>
             </p>
-            <p class="order-form__color order__color">
+            <p class="order-form__color">
               <input type="checkbox" id="tiffani" class="order-form__checkbox">
               <label class="order-form__title-radio-btn" for="tiffani">«Тиффани»</label>
             </p>
-            <p class="order-form_color order__color">
+            <p class="order-form_color">
               <input type="checkbox" id="black" class="order-form__checkbox">
               <label class="order-form__title-radio-btn" for="black">Черный</label>
             </p>
-            <p class="forder-form__color order__color">
+            <p class="forder-form__color">
               <input type="checkbox" id="pink" class="order-form__checkbox">
               <label class="order-form__title-radio-btn" for="pink">Розовый</label>
             </p>
-            <p class="order-form__color order__color">
+            <p class="order-form__color">
               <input type="checkbox" id="orange" class="order-form__checkbox">
               <label class="order-form__title-radio-btn" for="orange">Оранжевый</label>
             </p>
@@ -111,8 +114,8 @@
             <textarea placeholder="Опишите все ваши пожелания к заказу" class="order-form__textarea"></textarea>
           </fieldset>
 
-          <small class="class="order__notice"">*Поля обязательны для заполнения</small>
-          <button type="submit" class="class="order-form__to-order button"">Отправить заказ</button>
+          <small class="order__notice">*Поля обязательны для заполнения</small>
+          <button type="submit" class="order-form__to-order button">Отправить заказ</button>
 
         </form>
       </section>

@@ -1,0 +1,12 @@
+.catalog-main {
+
+}
+ .catalog-main__title {
+  padding: 76px 0 74px 0;
+
+   & h1 {
+     @include zero-spacing;
+     @include text(27px,30px,bold);
+   }
+   background-color: #f1f1f1;
+ }

@@ -1,0 +1,9 @@
+.site-list {
+  @include zero-spacing;
+}
+
+.site-list__item {
+  & a {
+    color: #000000;
+  }
+}

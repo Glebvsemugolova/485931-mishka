@@ -1,0 +1,27 @@
+.offers {
+  margin-top: 120px;
+}
+
+
+.offers__item {
+  list-style: none;
+  padding: 30px 0;
+
+  & a {
+    color: #ffffff;
+    @include text(19px,24px,bold);
+  }
+  &--interior-items {
+    background-color: #63d1bb;
+  }
+  &--home-toys {
+    background-color: #56c3b2;
+  }
+}
+
+.offers__list {
+  @include zero-spacing;
+}
+
+
+

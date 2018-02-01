@@ -1,0 +1,35 @@
+.special-offer {
+  padding-top: 34px;
+
+  @include text(15px,20px);
+
+  background-color: #ffffff;
+
+}
+
+.special-offer__title {
+  @include zero-spacing;
+  @include text(25px,30px,bold);
+}
+
+.special-offer__subtitle {
+  @include text(17px,20px,bold);
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.special-offer__description {
+  line-height: 24px;
+  color: #444444;
+}
+
+.special-offer__options {
+  color: #444444;
+}
+
+.special-offer__price {
+  display: block;
+
+  @include text(17px,24px,bold);
+}
+

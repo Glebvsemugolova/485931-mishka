@@ -1,0 +1,10 @@
+@mixin text($size: inherit, $height: inherit,$bold: normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $bold;
+}
+
+@mixin zero-spacing {
+  padding: 0;
+  margin: 0;
+}
