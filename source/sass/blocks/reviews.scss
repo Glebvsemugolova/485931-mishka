@@ -1,13 +1,11 @@
 .reviews {
   @include text(15px,30px);
-
   background-color: #ffffff;
 }
 
 .reviews__title {
   @include zero-spacing;
   padding-top: 34px;
-
   line-height: 25px;
 }
 
@@ -25,7 +23,6 @@
 
 .reviews__author-email {
   display: block;
-
   @include text(17px,24px);
   color: #444444;
 }

@@ -8,7 +8,6 @@
 
 .special-offer__title {
   @include zero-spacing;
-
   @include text(25px,30px,bold);
 }
 
@@ -29,6 +28,5 @@
 
 .special-offer__price {
   display: block;
-
   @include text(17px,24px,bold);
 }

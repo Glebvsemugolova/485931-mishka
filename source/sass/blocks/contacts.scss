@@ -1,6 +1,5 @@
 .contacts {
   background-color: #ffffff;
-
   @include text(15px,30px);
   color: #444444;
 
@@ -13,7 +12,6 @@
 
 .contacts__title {
   @include zero-spacing;
-
   @include text(18px,30px,bold);
   color: #000000;
 }
