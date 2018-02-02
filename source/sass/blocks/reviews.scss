@@ -2,7 +2,6 @@
   @include text(15px,30px);
 
   background-color: #ffffff;
-
 }
 
 .reviews__title {
@@ -22,7 +21,6 @@
 
 .reviews__author-name {
   @include text (17px,30px,bold);
-
 }
 
 .reviews__author-email {

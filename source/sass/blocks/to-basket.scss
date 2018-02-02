@@ -6,14 +6,12 @@
 
 .to-basket__title {
   @include zero-spacing;
+
   @include text(25px,30px,bold);
-
-
 }
 
 .to-basket__subtitle {
   display: block;
-
   margin: 28px 0;
 
   @include text(15px,30px);
@@ -30,5 +28,6 @@
   box-sizing: border-box;
 
   @include text(17px,16px,bold);
+
   border: 2px solid #ececec;
 }

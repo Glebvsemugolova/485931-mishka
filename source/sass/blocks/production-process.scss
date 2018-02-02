@@ -2,7 +2,6 @@
   margin-top: 30px;
   padding-bottom: 33px;
 
-
   @include text(13px,24px);
   color: #444444;
 
@@ -12,8 +11,9 @@
 .production-process__title {
   padding: 29px 0 26px 0;
 
-  & h2 {
+  h2 {
     @include zero-spacing;
+
     @include text(17px, 24px, bold);
   }
 }

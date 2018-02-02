@@ -1,13 +1,10 @@
-.catalog {
-
-}
-
 .catalog__list {
   @include zero-spacing;
 }
 
 .catalog__item {
   margin-top: 30px;
+
   border: 1px solid #ececec;
 }
 
@@ -17,7 +14,9 @@
 
 .catalog__product-title {
   @include zero-spacing;
+
   @include text(17px,24px,bold);
+  color: #000000
 }
 
 .catalog__product-feature {

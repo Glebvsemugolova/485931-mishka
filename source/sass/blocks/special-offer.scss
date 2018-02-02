@@ -4,11 +4,11 @@
   @include text(15px,20px);
 
   background-color: #ffffff;
-
 }
 
 .special-offer__title {
   @include zero-spacing;
+
   @include text(25px,30px,bold);
 }
 
@@ -32,4 +32,3 @@
 
   @include text(17px,24px,bold);
 }
-
