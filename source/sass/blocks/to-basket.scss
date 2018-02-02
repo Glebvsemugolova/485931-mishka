@@ -1,0 +1,28 @@
+.to-basket {
+  padding-top: 36px;
+  border-top: 2px solid #ececec;
+}
+
+.to-basket__title {
+  @include zero-spacing;
+  @include text(25px,30px,bold);
+}
+
+.to-basket__subtitle {
+  @include text(15px,30px);
+  display: block;
+  margin: 28px 0;
+  color: #444444;
+}
+
+.to-basket__list {
+  @include zero-spacing;
+}
+
+.to-basket__item {
+  @include text(17px,16px,bold);
+  padding: 20px 33px;
+  width: 82px;
+  box-sizing: border-box;
+  border: 2px solid #ececec;
+}

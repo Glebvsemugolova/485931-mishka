@@ -1,0 +1,11 @@
+.order {
+  @include text(13px,24px);
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.order__notice {
+  @include text(14px,16px);
+  display: block;
+  color: #444444;
+}

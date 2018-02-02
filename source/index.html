@@ -2,22 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Интеренет-магазин «Мишка»">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интеренет-магазин «Мишка»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Вязание на заказ</a>
+              <a href="form.html">Вязание на заказ</a>
             </li>
             <li class="site-list__item">
               <a href="#">Поиск по сайту</a>
@@ -52,7 +53,7 @@
         <p class="special-offer__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
-        <table class="special-offers__options">
+        <table class="special-offer__options">
           <tr>
             <td class="special-offer__property">Цвет</td>
             <td class="special-offer__value">"Тиффани"/серый</td>
@@ -66,9 +67,9 @@
             <td class="special-offer__value">15 см</td>
           </tr>
         </table>
-        <img src="#" width="260" height="315" class="special-offer__picture">
+        <img src="#" width="260" height="315" class="special-offer__picture" alt="Вязанные корзинки">
         <span class="special-offer__price">Цена: 990 руб.</span>
-        <button type="button" class="special-offer__order button">Заказать</button>
+        <a href="#" class="special-offer__order button">Заказать</a>
       </article>
 
       <section class="about-us">
@@ -94,14 +95,14 @@
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <p class="reviews__text">
-                Я молодая мама, но всё равно<br>
-                фотографии не набирали и близко<br>
-                такого количества лайков, как у<br>
-                популярных инстамамочек. В<br>
-                отчаянии, я накупила аксессуаров<br>
-                и игрушек в Мишке, и мои<br>
-                фотографии сразу стали более<br>
-                стильными, а также набирают<br>
+                Я молодая мама, но всё равно
+                фотографии не набирали и близко
+                такого количества лайков, как у
+                популярных инстамамочек. В
+                отчаянии, я накупила аксессуаров
+                и игрушек в Мишке, и мои
+                фотографии сразу стали более
+                стильными, а также набирают
                 больше лайков!
               </p>
               <span class="reviews__author-name">Анастасия Красильникова</span>
@@ -119,27 +120,24 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts_list">
-            <tr>
-              <td class="contacts__property">
-                <a href="#">e-mail:</a>
-              </td>
-              <td class="contacts__value">info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td class="contacts__property">адрес:</td>
-              <td class="contacts__value">
-                г. Санкт-Петербург,<br>
-                ул. Большая Конюшенная,<br>
-                д. 19/8, офис 101
-              </td>
-            </tr>
-          </table>
-          <div class="contacts__map">
-            <img src="#" width="322" height="457" class="contacts__map-picture">
-            <iframe></iframe>
+          <div class="contacts__email">
+            <span class="contacts__property">e-mail:</span>
+            <span class="contacts__value">
+              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </span>
           </div>
-          <button type="button" class="contacts__write-us">Напишите нам</button>
+          <div class="contacts__address">
+            <span class="contacts__property">адрес:</span>
+            <span class="contacts__value">
+              г. Санкт-Петербург,
+                ул. Большая Конюшенная,
+                д. 19/8, офис 101
+            </span>
+          </div>
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123595!2d30.32089461558447!3d59.93879686904856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1512838717921" width="322" height="457" style="border:0"></iframe>
+          </div>
+          <a href="#" class="contacts__write-us">Напишите нам</a>
         </div>
       </section>
 
@@ -171,11 +169,11 @@
   <section class="modal to-basket">
     <div class="to-basket__wrapper">
       <h2 class="to-basket__title">Добавить в корзину</h2>
-      <span class="to-basket__subtitle">Выберет размер:</span>
+      <span class="to-basket__subtitle">Выберите размер:</span>
       <ul class="to-basket__list">
-        <li class="to-basket_item">S</li>
-        <li class="to-basket_item">M</li>
-        <li class="to-basket_item">L</li>
+        <li class="to-basket__item">S</li>
+        <li class="to-basket__item">M</li>
+        <li class="to-basket__item">L</li>
       </ul>
       <button type="button" class="to-basket__add button">Добавить</button>
     </div>

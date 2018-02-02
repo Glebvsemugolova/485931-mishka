@@ -1,0 +1,17 @@
+.contacts {
+  @include text(15px,30px);
+  color: #444444;
+  background-color: #ffffff;
+
+  a {
+    color: #444444;
+    text-decoration: underline;
+    text-decoration-color: #62d1ba;
+  }
+}
+
+.contacts__title {
+  @include zero-spacing;
+  @include text(18px,30px,bold);
+  color: #000000;
+}

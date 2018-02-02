@@ -1,0 +1,40 @@
+.order-form {
+  fieldset {
+    margin-top: 31px;
+    border: none;
+  }
+
+  legend {
+    @include text(17px,16px,bold);
+    color: #63d1bb;
+  }
+
+  label {
+    @include text(17px,18px,bold);
+    color: #000000;
+  }
+
+  input[type="text"] {
+    padding-top: 21px;
+    border: none;
+    border-bottom: 2px solid #000000;
+  }
+
+  input[type="email"] {
+    border: none;
+    border-bottom: 2px solid #000000;
+  }
+
+  input[type="tel"] {
+    border: none;
+    border-bottom: 2px solid #000000;
+  }
+
+  textarea {
+    border: 2px solid #000000;
+  }
+}
+
+.order-form__to-order {
+  margin: 31px 0 55px 0;
+}

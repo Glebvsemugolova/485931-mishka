@@ -1,0 +1,9 @@
+.catalog-main__title {
+  padding: 76px 0 74px 0;
+  background-color: #f1f1f1;
+
+  h1 {
+    @include zero-spacing;
+    @include text(27px,30px,bold);
+  }
+}

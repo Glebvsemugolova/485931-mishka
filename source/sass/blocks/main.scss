@@ -1,0 +1,10 @@
+.main__title {
+  padding-top: 76px;
+  padding-bottom: 80px;
+  background-color: #f1f1f1;
+
+  h1 {
+    @include zero-spacing;
+    @include text(27px,30px,bold);
+  }
+}

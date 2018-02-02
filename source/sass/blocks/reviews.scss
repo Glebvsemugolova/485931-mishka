@@ -1,0 +1,28 @@
+.reviews {
+  @include text(15px,30px);
+  background-color: #ffffff;
+}
+
+.reviews__title {
+  @include zero-spacing;
+  padding-top: 34px;
+  line-height: 25px;
+}
+
+.reviews__item {
+  @include zero-spacing;
+}
+
+.reviews__text {
+  color: #444444;
+}
+
+.reviews__author-name {
+  @include text (17px,30px,bold);
+}
+
+.reviews__author-email {
+  @include text(17px,24px);
+  display: block;
+  color: #444444;
+}

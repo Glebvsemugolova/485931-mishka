@@ -1,0 +1,15 @@
+.about-us {
+  @include text(17px,20px,bold);
+  padding-top: 34px;
+  background-color: #ffffff;
+}
+
+.about-us__title {
+  @include zero-spacing;
+  @include text(25px,30px,bold);
+}
+
+.about-us__list {
+  @include zero-spacing;
+  list-style: none;
+}
