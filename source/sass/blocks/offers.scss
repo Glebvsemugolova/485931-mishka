@@ -15,8 +15,8 @@
   }
 
   a {
-    color: #ffffff;
     @include text(19px,24px,bold);
+    color: #ffffff;
   }
 }
 

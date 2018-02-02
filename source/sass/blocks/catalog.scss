@@ -14,7 +14,7 @@
 .catalog__product-title {
   @include zero-spacing;
   @include text(17px,24px,bold);
-  color: #000000
+  color: #000000;
 }
 
 .catalog__product-feature {

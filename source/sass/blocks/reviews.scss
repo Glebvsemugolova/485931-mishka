@@ -22,7 +22,7 @@
 }
 
 .reviews__author-email {
-  display: block;
   @include text(17px,24px);
+  display: block;
   color: #444444;
 }

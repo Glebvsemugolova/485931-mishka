@@ -1,8 +1,6 @@
 .special-offer {
-  padding-top: 34px;
-
   @include text(15px,20px);
-
+  padding-top: 34px;
   background-color: #ffffff;
 }
 
@@ -27,6 +25,7 @@
 }
 
 .special-offer__price {
-  display: block;
   @include text(17px,24px,bold);
+  display: block;
+
 }

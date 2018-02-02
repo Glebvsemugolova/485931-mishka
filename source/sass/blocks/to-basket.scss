@@ -9,9 +9,9 @@
 }
 
 .to-basket__subtitle {
+  @include text(15px,30px);
   display: block;
   margin: 28px 0;
-  @include text(15px,30px);
   color: #444444;
 }
 
@@ -20,9 +20,9 @@
 }
 
 .to-basket__item {
+  @include text(17px,16px,bold);
   padding: 20px 33px;
   width: 82px;
   box-sizing: border-box;
-  @include text(17px,16px,bold);
   border: 2px solid #ececec;
 }

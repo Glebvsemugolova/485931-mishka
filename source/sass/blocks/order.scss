@@ -5,7 +5,7 @@
 }
 
 .order__notice {
-  display: block;
   @include text(14px,16px);
+  display: block;
   color: #444444;
 }

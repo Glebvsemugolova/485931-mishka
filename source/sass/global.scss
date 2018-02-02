@@ -1,6 +1,6 @@
 body {
-  font-family: "OpenSans", Arial, sans-serif;
   @include text(15px,30px);
+  font-family: "OpenSans", Arial, sans-serif;
   color: #000000;
   background-color: #ffffff;
 }
