@@ -1,4 +1,22 @@
 .main-nav {
   @include text(17px,24px,bold);
+  width: 320px;
+  margin: 0 auto;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    margin: 0;
+    width: auto;
+    height: 90px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
 }

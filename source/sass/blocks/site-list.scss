@@ -1,5 +1,6 @@
 .site-list {
   @include zero-spacing;
+  list-style: none;
 }
 
 .site-list__item {
