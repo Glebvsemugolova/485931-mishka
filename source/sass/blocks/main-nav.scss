@@ -58,6 +58,7 @@
     width: 700px;
     margin: 0 auto;
   }
+
   .nav-mock {
     min-height: 0;
   }
@@ -70,6 +71,5 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 1070px;
-
   }
 }

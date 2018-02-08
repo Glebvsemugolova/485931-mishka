@@ -2,9 +2,10 @@
   fieldset {
     margin-top: 31px;
     border: none;
-    p {
-      @include zero-spacing;
-    }
+  }
+
+  p {
+    @include zero-spacing;
   }
 
   legend {

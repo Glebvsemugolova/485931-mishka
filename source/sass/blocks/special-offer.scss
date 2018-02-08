@@ -22,6 +22,7 @@
 }
 
 .special-offer__description {
+  @include zero-spacing;
   line-height: 24px;
   color: #444444;
 }
@@ -33,10 +34,6 @@
 .special-offer__price {
   @include text(17px,24px,bold);
   display: block;
-}
-
-.special-offer__description {
-  @include zero-spacing;
 }
 
 @media (min-width: $tablet-width) {
