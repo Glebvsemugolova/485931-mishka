@@ -3,6 +3,13 @@
   display: flex;
   list-style: none;
   min-height: 80px;
+  align-items: center;
+  width: 141px;
+  justify-content: space-between;
+}
+
+.social__link {
+  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {

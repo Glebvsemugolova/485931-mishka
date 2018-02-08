@@ -22,4 +22,15 @@
   .order__wrapper {
     width: 670px;
   }
+
+  .order__description {
+    @include text(17px,30px);
+    @include zero-spacing;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__wrapper {
+    width: 815px;
+  }
 }

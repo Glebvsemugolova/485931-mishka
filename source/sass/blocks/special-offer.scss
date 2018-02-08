@@ -44,11 +44,14 @@
     width: 670px;
   }
 
+  .special-offer__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .special-offer__subtitle {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 70px;
+    text-align: center;
   }
 
   .special-offer__info {
@@ -73,13 +76,16 @@
     padding-left: 175px;
   }
 
-  .special-offer__title {
-    @include text(53px,57px,bold);
+  .special-offer__header {
+    width: 732px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     position: absolute;
+    left: 0;
   }
 
-  .special-offer__subtitle {
-    left: 0;
+  .special-offer__title {
+    @include text(53px,57px,bold);
   }
 
   .special-offer__picture {

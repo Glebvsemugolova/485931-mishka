@@ -2,6 +2,9 @@
   fieldset {
     margin-top: 31px;
     border: none;
+    p {
+      @include zero-spacing;
+    }
   }
 
   legend {
@@ -40,7 +43,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .order-form__telephone-number {
+  .flex-container {
     display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__textarea,
+  .order-form__field,
+  .order-form__color,
+  .order-form__interior-item,
+  .order-form__home-toy {
+    width: 700px;
   }
 }
