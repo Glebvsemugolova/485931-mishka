@@ -1,10 +1,16 @@
+.catalog__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .catalog__list {
   @include zero-spacing;
+  list-style: none;
 }
 
 .catalog__item {
-  margin-top: 30px;
   border: 1px solid #ececec;
+  margin-top: 30px;
 }
 
 .catalog__info {
@@ -20,4 +26,31 @@
 .catalog__product-feature {
   @include text(13px,30px);
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    width: 670px;
+  }
+
+  .catalog__item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    width: 1050px;
+  }
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    display: block;
+    width: 320px;
+  }
 }

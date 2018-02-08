@@ -1,27 +1,35 @@
 .page-header {
   @include text(17px,24px,bold);
-  display: flex;
-  flex-direction: column;
   color: #000000;
   border-bottom: 2px solid #ececec;
 }
 
 .page-header__logo {
-  height: 80px;
+  height: 79px;
+  text-align: center;
+}
+
+.page-header__delivery {
+  color: gray;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    flex-direction: row;
-  }
-
   .page-header__logo {
-    height: 90px;
+    height: 89px;
+    width: 326px;
+    text-align: left;
+  }
+  .page-header__delivery {
+    display: block;
+    order: 2;
+    margin-bottom: -24px;
+    margin-left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    height: 648px;
+    text-align: center;
   }
 }

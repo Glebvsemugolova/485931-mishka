@@ -1,7 +1,13 @@
 .special-offer {
   @include text(15px,20px);
-  padding-top: 34px;
   background-color: #ffffff;
+}
+
+.special-offer__wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .special-offer__title {
@@ -27,4 +33,57 @@
 .special-offer__price {
   @include text(17px,24px,bold);
   display: block;
+}
+
+.special-offer__description {
+  @include zero-spacing;
+}
+
+@media (min-width: $tablet-width) {
+  .special-offer__wrapper {
+    width: 670px;
+  }
+
+  .special-offer__subtitle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+  }
+
+  .special-offer__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+  }
+
+  .special-offer__info-text {
+    width: 260px;
+  }
+
+  .special-offer__price-order {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special-offer__wrapper {
+    width: 1050px;
+    padding-left: 175px;
+  }
+
+  .special-offer__title {
+    @include text(53px,57px,bold);
+    position: absolute;
+  }
+
+  .special-offer__subtitle {
+    left: 0;
+  }
+
+  .special-offer__picture {
+    width: 525px;
+    height: 636px;
+  }
 }

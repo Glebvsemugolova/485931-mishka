@@ -4,7 +4,27 @@
 }
 
 .site-list__item {
+  text-align: left;
+
   & a {
     color: #000000;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    order: 1;
+    display: flex;
+    margin-bottom: -24px;
+    width: 320px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    order: -1;
+    margin: 0;
+    width: 380px;
   }
 }

@@ -4,6 +4,11 @@
   background-color: #ffffff;
 }
 
+.about-us__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .about-us__title {
   @include zero-spacing;
   @include text(25px,30px,bold);
@@ -12,4 +17,23 @@
 .about-us__list {
   @include zero-spacing;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__wrapper {
+    width: 670px;
+  }
+
+  .about-us__info {
+    display: flex;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    width: 1050px;
+    padding-left: 175px;
+    box-sizing: border-box;
+  }
 }

@@ -2,34 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интеренет-магазин «Мишка»">
+  <header class="page-header">
+
+    <nav class="main-nav nav-mock main-nav--closed">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интеренет-магазин «Мишка»">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li class="site-list__item">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list news-list">
+        <li>
+          <a href="#">Новые поступления</a>
+        </li>
+        <li>
+          <a href="#">Распродажа</a>
+        </li>
+      </ul>
+      <span class="page-header__delivery">Бесплатная доставка по России</span>
+
+    </nav>
+  </header>
 
     <main class="catalog-main">
       <div class="catalog-main__title">
@@ -61,7 +76,6 @@
                   <h3 class="catalog__product-title">Корзинка для белья</h3>
                 </a>
                 <span class="catalog__product-feature">Диаметр 15 см, высота 10 см</span>
-                <hr>
                 <span class="catalog__product-price">690 руб.</span>
               </div>
             </li>
@@ -74,7 +88,6 @@
                   <h3 class="catalog__product-title">Большая корзинка для игрушек</h3>
                 </a>
                 <span class="catalog__product-feature">Диаметр 30 см, высота 30 см</span>
-                <hr>
                 <span class="catalog__product-price">1500 руб.</span>
               </div>
             </li>
@@ -104,6 +117,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img src="img/logo-mobile.svg" alt="#" width="#" height="#">
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

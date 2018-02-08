@@ -3,7 +3,13 @@
   margin-top: 30px;
   padding-bottom: 33px;
   color: #444444;
-  bordeк: 1px solid #ececec;
+}
+
+.production-process__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ececec;
 }
 
 .production-process__title {
@@ -12,5 +18,19 @@
   h2 {
     @include zero-spacing;
     @include text(17px, 24px, bold);
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .production-process__wrapper {
+    width: 670px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .production-process__wrapper {
+    width: 1050px;
   }
 }

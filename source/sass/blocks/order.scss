@@ -4,8 +4,22 @@
   background-color: #ffffff;
 }
 
+.order__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  fieldset {
+    @include zero-spacing;
+  }
+}
+
 .order__notice {
   @include text(14px,16px);
   display: block;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .order__wrapper {
+    width: 670px;
+  }
 }

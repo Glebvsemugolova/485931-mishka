@@ -38,3 +38,9 @@
 .order-form__to-order {
   margin: 31px 0 55px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form__telephone-number {
+    display: flex;
+  }
+}
