@@ -1,9 +1,10 @@
 .offers {
-  margin-top: 120px;
+  margin: 0 auto;
+  padding-top: 120px;
 }
 
 .offers__item {
-  padding: 30px 0;
+  padding: 30px 185px 30px 28px;
   list-style: none;
 
   &--interior-items {
@@ -22,4 +23,34 @@
 
 .offers__list {
   @include zero-spacing;
+}
+
+@media (min-width: $tablet-width) {
+  .offers {
+    padding-top: 371px;
+  }
+
+  .offers__wrapper {
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  .offers__list {
+    display: flex;
+  }
+
+  .offers__item {
+    flex-grow: 1;
+
+    a {
+      display: inline-block;
+      width: 111px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers__wrapper {
+    width: 1050px;
+  }
 }

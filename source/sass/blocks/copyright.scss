@@ -1,3 +1,22 @@
+.copyright {
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+  width: 182px;
+  justify-content: space-between;
+}
+
 .copyright__text {
-  @include text(19,18,bold);
+  @include text(19px,18px,bold);
+}
+
+.copyright__link {
+  font-size: 0;
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    min-height: 142px;
+  }
 }

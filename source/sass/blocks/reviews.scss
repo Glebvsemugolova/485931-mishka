@@ -3,6 +3,12 @@
   background-color: #ffffff;
 }
 
+.reviews__wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+}
+
 .reviews__title {
   @include zero-spacing;
   padding-top: 34px;
@@ -25,4 +31,30 @@
   @include text(17px,24px);
   display: block;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    width: 670px;
+  }
+
+  .reviews__write {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .reviews__toogles {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    width: 1050px;
+    padding-left: 175px;
+    box-sizing: border-box;
+  }
 }

@@ -4,6 +4,10 @@
     border: none;
   }
 
+  p {
+    @include zero-spacing;
+  }
+
   legend {
     @include text(17px,16px,bold);
     color: #63d1bb;
@@ -37,4 +41,21 @@
 
 .order-form__to-order {
   margin: 31px 0 55px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__textarea,
+  .order-form__field,
+  .order-form__color,
+  .order-form__interior-item,
+  .order-form__home-toy {
+    width: 700px;
+  }
 }

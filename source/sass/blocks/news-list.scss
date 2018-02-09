@@ -1,0 +1,18 @@
+.news-list {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .news-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -24px;
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news-list {
+    width: 380px;
+  }
+}
