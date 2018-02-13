@@ -8,3 +8,24 @@
     @include text(27px,30px,bold);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-main__title {
+    padding-top: 105px;
+    padding-bottom: 78px;
+    h1 {
+      @include text(43px,50px,bold);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-main__title {
+    padding-top: 105px;
+    padding-bottom: 99px;
+    h1 {
+      @include text(53px,57px,bold);
+    }
+
+  }
+}

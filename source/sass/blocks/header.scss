@@ -7,9 +7,12 @@
 .page-header__logo {
   height: 79px;
   text-align: center;
+  box-sizing: border-box;
+  padding-top: 17px;
 }
 
 .page-header__delivery {
+  @include text(15px,24px);
   color: gray;
   display: none;
 }
@@ -17,8 +20,9 @@
 @media (min-width: $tablet-width) {
   .page-header__logo {
     height: 89px;
-    width: 326px;
+    width: 330px;
     text-align: left;
+    border-right: 1px solid #ececec;
   }
 
   .page-header__delivery {

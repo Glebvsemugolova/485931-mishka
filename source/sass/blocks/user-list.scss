@@ -1,9 +1,35 @@
+.user-list__item {
+  position: relative;
+}
+
+.user-list__item-icon {
+  position: absolute;
+  top: 32px;
+  left: 40px;
+
+  path {
+    fill: #dedddd;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .user-list {
     order: 0;
     display: flex;
-    width: 370px;
+    width: 340px;
     justify-content: space-between;
+  }
+
+  .user-list__item {
+    display: flex;
+    a {
+      margin: auto 0;
+    }
+    &--search {
+      font-size: 0;
+      width: 85px;
+      border-right: 1px solid #ececec;
+    }
   }
 }
 
@@ -14,8 +40,3 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .user-list {
-    width: 360px;
-  }
-}

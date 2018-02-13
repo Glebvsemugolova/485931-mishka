@@ -7,7 +7,7 @@
 }
 
 .page-main__title {
-  width: 260px;
+  width: 272px;
   margin: 0 auto;
   text-align: center;
 }
@@ -15,5 +15,16 @@
 @media (min-width: $tablet-width) {
   .page-main__title {
     width: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    padding-top: 120px;
+  }
+
+  .page-main__title {
+    @include text(53px,50px,bold);
+    width: 620px;
   }
 }

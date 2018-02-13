@@ -4,15 +4,11 @@
 
 @media (min-width: $desktop-width) {
   .news-list {
+    @include text(15px,24px,bold);
+    width: 320px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: -24px;
     order: 2;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .news-list {
-    width: 380px;
   }
 }
