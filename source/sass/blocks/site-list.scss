@@ -3,9 +3,7 @@
   list-style: none;
 }
 
-.site-list__item,
-.user-list__item,
-.news-list__item {
+.site-list__item {
   text-align: left;
   border-top: 1px solid #ececec;
   a {
@@ -19,23 +17,15 @@
   .site-list {
     order: 1;
     display: flex;
-    margin-bottom: -24px;
     width: 320px;
     justify-content: space-between;
   }
 
-  .site-list__item,
-  .user-list__item,
-  .news-list__item {
+  .site-list__item {
     border: none;
     a {
-      padding: 0;
-    }
-  }
-
-  .site-list__item {
-    a {
       @include text(15px,24px,bold);
+      padding: 0;
     }
   }
 }
@@ -45,6 +35,7 @@
     order: -1;
     margin: 0;
     width: 380px;
+    margin-bottom: 13px;
   }
 
   .site-list__item {

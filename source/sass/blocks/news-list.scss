@@ -2,13 +2,32 @@
   display: none;
 }
 
+.news-list__item {
+  text-align: left;
+  border-top: 1px solid #ececec;
+  a {
+    color: #000000;
+    display: inline-block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .news-list__item {
+    border: none;
+    a {
+      padding: 0;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .news-list {
     @include text(15px,24px,bold);
     width: 320px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: -24px;
     order: 2;
   }
 }
+
+

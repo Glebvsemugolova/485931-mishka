@@ -4,6 +4,11 @@
   background-color: #ffffff;
 }
 
+.order-form__list {
+  @include zero-spacing;
+  list-style: none;
+}
+
 .order__wrapper {
   width: 260px;
   margin: 0 auto;
@@ -11,6 +16,11 @@
   fieldset {
     @include zero-spacing;
   }
+}
+
+.order__description {
+  @include zero-spacing;
+  margin-top: 29px;
 }
 
 .order__notice {
@@ -21,12 +31,20 @@
 
 @media (min-width: $tablet-width) {
   .order__wrapper {
-    width: 670px;
+    width: 100%;
   }
 
   .order__description {
     @include text(17px,30px);
     @include zero-spacing;
+    width: 670px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .order__notice {
+    padding-top: 15px;
   }
 }
 

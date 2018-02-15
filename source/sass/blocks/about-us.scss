@@ -48,11 +48,23 @@
 
   .about-us__info {
     display: flex;
+    justify-content: space-between;
   }
 
   .about-us__item {
+    @include text(20px,22px,bold);
     padding-top: 100px;
     width: 300px;
+
+    &--eco,
+    &--heart {
+      width: 220px;
+    }
+
+    &--price,
+    &--gift {
+      width: 240px;
+    }
   }
 
   .about-us__item-icon {
@@ -75,5 +87,9 @@
 
   .about-us__title {
     @include text(53px,57px,bold);
+  }
+
+  .about-us__info {
+    width: 655px;
   }
 }

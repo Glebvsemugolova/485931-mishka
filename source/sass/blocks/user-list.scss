@@ -1,14 +1,22 @@
 .user-list__item {
   position: relative;
+  text-align: left;
+  border-top: 1px solid #ececec;
+  a {
+    color: #000000;
+    display: inline-block;
+    padding: 27px 24%;
+  }
 }
 
-.user-list__item-icon {
+.user-list__icon,
+.user-list__search-icon {
   position: absolute;
   top: 32px;
   left: 40px;
 
   path {
-    fill: #dedddd;
+    fill: #d3d2d2;
   }
 }
 
@@ -22,8 +30,11 @@
 
   .user-list__item {
     display: flex;
+    margin-bottom: 13px;
+    border: none;
     a {
       margin: auto 0;
+      padding: 0;
     }
     &--search {
       font-size: 0;
@@ -31,12 +42,23 @@
       border-right: 1px solid #ececec;
     }
   }
+
+  .user-list__search-icon {
+    left: 36px;
+  }
+
+  .user-list__icon {
+    left: -50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .user-list {
     margin: 0;
-    width: 360px;
+  }
+
+  .user-list__icon {
+    left: -55px;
   }
 }
 

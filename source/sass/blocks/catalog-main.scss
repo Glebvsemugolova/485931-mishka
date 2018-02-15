@@ -10,6 +10,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-main {
+    margin-top: -40px;
+    border-top: 1px solid #ececec;;
+  }
+
   .catalog-main__title {
     padding-top: 105px;
     padding-bottom: 78px;

@@ -36,8 +36,20 @@
   margin-bottom: 42px;
 }
 
+.special-offer__line {
+  display: block;
+  width: 260px;
+  border-bottom: 1px solid #c7c7c7;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
 .special-offer__property {
   padding-right: 30px;
+  width: 90px;
 }
 
 .special-offer__price {
@@ -68,6 +80,7 @@
 
   .special-offer__title {
     @include zero-spacing;
+    @include text(43px,50px,bold);
   }
 
   .special-offer__subtitle {
@@ -88,6 +101,8 @@
 
   .special-offer__description {
     @include zero-spacing;
+    @include text(17px,30px);
+    width: 300px;
     padding-bottom: 50px;
   }
 
@@ -95,22 +110,40 @@
     position: absolute;
     bottom: 14px;
   }
+
+  .special-offer__price {
+    font-size: 20px;
+  }
+
+  .special-offer__picture {
+    width: 333px;
+    height: 404px;
+  }
+
+  .special-offer__line {
+    width: 290px;
+  }
+
+  .special-offer__order {
+    width: 290px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .special-offer__wrapper {
     width: 1050px;
+    padding-top: 18px;
     padding-left: 175px;
     padding-bottom: 71px;
   }
 
   .special-offer__header {
-    width: 732px;
+    width: 650px;
     flex-direction: row-reverse;
     justify-content: space-between;
     position: absolute;
-    left: 0;
-    top: 170px;
+    left: 48px;
+    top: 128px;
   }
 
   .special-offer__title {
@@ -129,6 +162,10 @@
   .special-offer__picture {
     width: 525px;
     height: 636px;
+  }
+
+  .special-offer__price-order {
+    bottom: 36px;
   }
 
   .special-offer__price {

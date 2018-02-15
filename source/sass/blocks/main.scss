@@ -9,3 +9,16 @@
     @include text(27px,30px,bold);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main {
+    margin-top: -40px;
+    border-top: 1px solid #ececec;;
+  }
+
+  .main__title {
+    @include text(43px,50px,bold);
+    padding-top: 104px;
+    padding-bottom: 90px;
+  }
+}

@@ -14,11 +14,26 @@
   display: none;
 }
 
+.page-footer__container {
+  width: 260px;
+  display: flex;
+  border-top: 2px solid #ececec;
+}
+
+.page-footer__copyright {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
     width: 670px;
+  }
+
+  .page-footer__container {
+    width: initial;
+    border: none;
   }
 
   .page-footer__logo {
