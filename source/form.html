@@ -11,7 +11,7 @@
   <header class="page-header">
 
     <nav class="main-nav nav-mock main-nav--closed">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--opened" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <a class="page-header__logo" href="index.html">
@@ -124,16 +124,19 @@
               <div class="order-form__flex-container">
                 <legend>ФИО</legend>
                 <div class="order-form__about-client">
-                  <label for="name">Имя:</label>
+
                   <p>
-                    <input type="text" placeholder="Введите ваше имя*" id="name" class="order-form__field">
+                    <label for="name">Имя:</label>
+                    <input type="text" placeholder="Введите ваше имя*" id="name" class="order-form__field order-form__field--first">
                   </p>
-                  <label for="surname">Фамилия:</label>
+
                   <p>
+                    <label for="surname">Фамилия:</label>
                     <input type="text" placeholder="Введите вашу фамилию*" id="surname" class="order-form__field">
                   </p>
-                  <label for="patronymic">Отчество:</label>
+
                   <p>
+                    <label for="patronymic">Отчество:</label>
                     <input type="text" placeholder="Отчество, если желаете" id="patronymic" class="order-form__field">
                   </p>
                 </div>
@@ -143,7 +146,7 @@
             </fieldset>
             <div class="order-form__background-container order-form__background-container--second">
               <fieldset>
-                <div class="order-form__flex-container">
+                <div class="order-form__flex-container order-form__flex-container--telephone">
                   <legend>Тел</legend>
                   <div class="order-form__telephone-number">
                     <input type="tel" placeholder="+7 XXX XX XX*" class="order-form__field">
@@ -165,7 +168,7 @@
               </fieldset>
 
               <fieldset>
-                <div class="order-form__flex-container">
+                <div class="order-form__flex-container order-form__flex-container--email">
                   <legend>E-mail</legend>
                   <div class="order-form__e-mail">
                     <input type="email" placeholder="Ваш Email*" class="order-form__field">

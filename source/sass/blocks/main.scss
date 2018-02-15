@@ -17,8 +17,20 @@
   }
 
   .main__title {
-    @include text(43px,50px,bold);
     padding-top: 104px;
     padding-bottom: 90px;
+    h1 {
+      @include text(43px,50px,bold);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__title {
+    padding-top: 105px;
+    padding-bottom: 111px;
+    h1 {
+      @include text(53px,57px,bold);
+    }
   }
 }

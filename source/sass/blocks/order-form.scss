@@ -161,15 +161,6 @@
   }
 }
 
-/*.order-form__telephone-number::after {
-  position: absolute;
-  content: "";
-  background-image: url("../../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-}*/
-
 .order-form__wishes {
   margin-top: 23px;
   margin-bottom: 18px;
@@ -231,7 +222,11 @@
   }
 
   .order-form__color-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     p {
+      width: 142px;
       margin-bottom: 60px;
       &:last-child {
         margin-bottom: 0;
@@ -249,9 +244,16 @@
 
   .order-form__telephone-number,
   .order-form__e-mail {
+    padding-top: 0;
     svg {
       right: 20px;
+      top: 1px;
     }
+  }
+
+  .order-form__flex-container--telephone,
+  .order-form__flex-container--email {
+    padding-top: 25px;
   }
 
   .order-form__flex-container {
@@ -282,12 +284,11 @@
     background-color: #f1f1f1;
     &--first {
       padding-top: 50px;
-      padding-bottom: 50px;
       margin-top: 65px;
       margin-bottom: 65px;
     }
     &--second {
-      padding-top: 65px;
+      padding-top: 40px;
       padding-bottom: 50px;
       margin-top: 50px;
       margin-bottom: 50px;
@@ -327,11 +328,61 @@
 }
 
 @media (min-width: $desktop-width) {
-  .order-form__textarea,
-  .order-form__field,
-  .order-form__color,
-  .order-form__interior-item,
-  .order-form__home-toy {
+  .order-form {
+    input[type="text"] {
+      padding-top: 0;
+      width: 573px;
+      border-bottom: 2px solid #000000;
+    }
+  }
+
+  .order-form__background-container--first {
+    legend {
+      width: 145px;
+    }
+  }
+
+  .order-form__type-product {
+    width: 615px;
+  }
+
+  .order-form__color-product {
+    width: 650px;
+    p {
+      width: 154px;
+    }
+  }
+
+  .order-form__flex-container {
+    width: 815px;
+  }
+
+  .order-form__about-client {
     width: 700px;
+    p {
+      display: flex;
+      justify-content: space-between;
+      border: none;
+    }
+  }
+
+  .order-form__wishes {
+    width: 700px;
+  }
+
+  .order-form__flex-container--reverse {
+    padding-top: 49px;
+    padding-bottom: 50px;
+    padding-left: 115px;
+    width: 700px;
+  }
+
+  .order-form__telephone-number,
+  .order-form__e-mail {
+    width: 700px;
+  }
+
+  .order-form__to-order {
+    width: 230px;
   }
 }
