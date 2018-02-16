@@ -1,0 +1,11 @@
+.button {
+  @include text(17px,20px,bold);
+  display: block;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 15px;
+  box-sizing: border-box;
+}

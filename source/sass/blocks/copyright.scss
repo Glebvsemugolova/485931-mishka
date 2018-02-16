@@ -13,10 +13,14 @@
 .copyright__link {
   font-size: 0;
   display: flex;
+
+  svg {
+    fill: #63d1bb;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
-    min-height: 142px;
+    min-height: 0;
   }
 }

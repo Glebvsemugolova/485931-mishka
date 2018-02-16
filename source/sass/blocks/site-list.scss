@@ -5,9 +5,12 @@
 
 .site-list__item {
   text-align: left;
+  border-top: 1px solid #ececec;
 
-  & a {
+  a {
     color: #000000;
+    display: inline-block;
+    padding: 27px 24%;
   }
 }
 
@@ -15,9 +18,17 @@
   .site-list {
     order: 1;
     display: flex;
-    margin-bottom: -24px;
     width: 320px;
     justify-content: space-between;
+  }
+
+  .site-list__item {
+    border: none;
+
+    a {
+      @include text(15px,24px,bold);
+      padding: 0;
+    }
   }
 }
 
@@ -26,5 +37,20 @@
     order: -1;
     margin: 0;
     width: 380px;
+    margin-bottom: 13px;
+  }
+
+  .site-list__item {
+    display: flex;
+
+    a {
+      @include text(17px,24px,bold);
+      margin-top: 24px;
+    }
+
+    &--catalog {
+      width: 185px;
+      border-right: 1px solid #ececec;
+    }
   }
 }

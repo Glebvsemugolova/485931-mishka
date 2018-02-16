@@ -11,6 +11,7 @@
   legend {
     @include text(17px,16px,bold);
     color: #63d1bb;
+    text-transform: uppercase;
   }
 
   label {
@@ -18,44 +19,391 @@
     color: #000000;
   }
 
+  input {
+    @include text(17px,18px);
+    color: #c7c7c7;
+    width: 100%;
+  }
+
   input[type="text"] {
-    padding-top: 21px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     border: none;
-    border-bottom: 2px solid #000000;
   }
 
   input[type="email"] {
     border: none;
-    border-bottom: 2px solid #000000;
   }
 
   input[type="tel"] {
     border: none;
-    border-bottom: 2px solid #000000;
   }
 
   textarea {
+    @include text(17px,18px);
+    font-family: "OpenSans", "Arial", sans-serif;
+    color: #c7c7c7;
+    width: 260px;
+    min-height: 142px;
+    padding: 17px;
+    box-sizing: border-box;
     border: 2px solid #000000;
+    resize: none;
   }
 }
 
+.order-form__color-product {
+  padding-left: 60px;
+  margin-top: 36px;
+
+  p {
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.order-form__type-product {
+  margin-top: 36px;
+  padding-left: 60px;
+
+  p {
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+.order-form__radio-btn {
+  display: none;
+}
+
+.order-form__radio-btn:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -46px;
+  width: 15px;
+  height: 15px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+.order-form__title-radio-btn {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #444444;
+    border-radius: 50%;
+    left: -60px;
+    top: -10px;
+  }
+}
+
+.order-form__checkbox {
+  display: none;
+}
+
+.order-form__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -52px;
+  width: 33px;
+  height: 25px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.order-form__title-checkbox {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #444444;
+    left: -60px;
+    top: -12px;
+  }
+}
+
+.order-form__about-client {
+  margin-top: 33px;
+
+  p {
+    border-bottom: 2px solid #000000;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.order-form__telephone-number,
+.order-form__e-mail {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #000000;
+
+  svg {
+    position: absolute;
+    fill: #cccccc;
+    right: 0;
+    top: 25px;
+  }
+
+  path {
+    fill: #cccccc;
+  }
+}
+
+.order-form__wishes {
+  margin-top: 23px;
+  margin-bottom: 18px;
+}
+
 .order-form__to-order {
-  margin: 31px 0 55px 0;
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 31px;
+  margin-bottom: 55px;
 }
 
 @media (min-width: $tablet-width) {
-  .flex-container {
+  .order-form {
+    textarea {
+      @include text(19px,18px);
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    fieldset {
+      margin: 0;
+    }
+
+    label {
+      @include text(19px,18px,bold);
+    }
+
+    input {
+      @include text(19px,18px);
+    }
+
+    input[type="tel"],
+    input[type="email"] {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .order-form__wishes {
+    margin-bottom: 0;
+  }
+
+  .order-form__type-product,
+  .order-form__color-product {
+    width: 420px;
+    margin-top: 0;
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .order-form__interior-item {
+    label {
+      padding-bottom: 55px;
+    }
+  }
+
+  .order-form__color-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    p {
+      width: 142px;
+      margin-bottom: 60px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .order-form__about-client,
+  .order-form__telephone-number,
+  .order-form__e-mail,
+  .order-form__wishes {
+    width: 500px;
+    margin-top: 0;
+  }
+
+  .order-form__telephone-number,
+  .order-form__e-mail {
+    padding-top: 0;
+
+    svg {
+      right: 20px;
+      top: 1px;
+    }
+  }
+
+  .order-form__flex-container--telephone,
+  .order-form__flex-container--email {
+    padding-top: 25px;
+  }
+
+  .order-form__flex-container {
     display: flex;
     justify-content: space-between;
+    width: 670px;
+    margin: 0 auto;
+
+    &--reverse {
+      flex-direction: row-reverse;
+      padding-top: 53px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .order-form__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
+
+  .order-form__to-order {
+    @include zero-spacing;
+  }
+
+  .order-form__background-container {
+    background-color: #f1f1f1;
+
+    &--first {
+      padding-top: 50px;
+      margin-top: 65px;
+      margin-bottom: 65px;
+    }
+
+    &--second {
+      padding-top: 40px;
+      padding-bottom: 50px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .order-form__title-radio-btn {
+    &::before {
+      width: 51px;
+      height: 51px;
+      top: -18px;
+      left: -85px;
+    }
+  }
+
+  .order-form__radio-btn:checked + label::after {
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: -67px;
+  }
+
+  .order-form__title-checkbox {
+    &::before {
+      width: 54px;
+      height: 52px;
+      top: -18px;
+      left: -85px;
+    }
+  }
+
+  .order-form__checkbox:checked + label::after {
+    width: 52px;
+    height: 26px;
+    top: -1px;
+    left: -69px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .order-form__textarea,
-  .order-form__field,
-  .order-form__color,
-  .order-form__interior-item,
-  .order-form__home-toy {
+  .order-form {
+    input[type="text"] {
+      padding-top: 0;
+      width: 573px;
+      border-bottom: 2px solid #000000;
+    }
+  }
+
+  .order-form__background-container--first {
+    legend {
+      width: 145px;
+    }
+  }
+
+  .order-form__type-product {
+    width: 615px;
+  }
+
+  .order-form__color-product {
+    width: 650px;
+
+    p {
+      width: 154px;
+    }
+  }
+
+  .order-form__flex-container {
+    width: 815px;
+  }
+
+  .order-form__about-client {
     width: 700px;
+
+    p {
+      display: flex;
+      justify-content: space-between;
+      border: none;
+    }
+  }
+
+  .order-form__wishes {
+    width: 700px;
+  }
+
+  .order-form__flex-container--reverse {
+    padding-top: 49px;
+    padding-bottom: 50px;
+    padding-left: 115px;
+    width: 700px;
+  }
+
+  .order-form__telephone-number,
+  .order-form__e-mail {
+    width: 700px;
+  }
+
+  .order-form__to-order {
+    width: 230px;
   }
 }

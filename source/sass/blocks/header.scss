@@ -5,26 +5,31 @@
 }
 
 .page-header__logo {
-  height: 79px;
   text-align: center;
+  box-sizing: border-box;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .page-header__delivery {
+  @include text(15px,24px);
   color: gray;
   display: none;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    height: 89px;
-    width: 326px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 13px;
+    width: 320px;
     text-align: left;
+    border-right: 1px solid #ececec;
   }
 
   .page-header__delivery {
     display: block;
     order: 2;
-    margin-bottom: -24px;
     margin-left: auto;
   }
 }

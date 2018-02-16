@@ -3,7 +3,6 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -23,39 +22,57 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
   z-index: 2;
 
   display: block;
-  width: 70px;
-  height: 50px;
+  padding: 0;
 
   background-color: #ffffff;
+  background-repeat: no-repeat;
 
   cursor: pointer;
   border: none;
 }
 
-.main-nav--closed .main-nav__toggle::before {
+.main-nav__toggle--opened {
+  top: 32px;
+  right: 31px;
+
+  width: 20px;
+  height: 14px;
+
+  background-image: url("../../img/icon-menu-open.svg");
+}
+
+.main-nav__toggle--closed {
+  top: 29px;
+  right: 30px;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../../img/icon-menu-close.svg");
+}
+
+/*.main-nav--closed .main-nav__toggle::before {
   content: "";
 
   position: absolute;
-  top: 15px;
-  left: 17px;
+  top: 32px;
+  right: 31px;
 
   width: 20px;
   height: 2px;
 
   background-color: #000000;
   box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-}
+}  */
 
 @media (min-width: $tablet-width) {
   .main-nav {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 700px;
+    width: 670px;
     margin: 0 auto;
   }
 
@@ -70,6 +87,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1070px;
+    width: 1050px;
   }
 }

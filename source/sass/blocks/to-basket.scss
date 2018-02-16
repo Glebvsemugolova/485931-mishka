@@ -1,28 +1,99 @@
+.to-basket--hidden {
+  display: none;
+}
+
 .to-basket {
-  padding-top: 36px;
-  border-top: 2px solid #ececec;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.to-basket__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .to-basket__title {
   @include zero-spacing;
   @include text(25px,30px,bold);
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 36px;
+  width: 150px;
 }
 
 .to-basket__subtitle {
   @include text(15px,30px);
   display: block;
-  margin: 28px 0;
+  margin-top: 24px;
+  margin-bottom: 28px;
   color: #444444;
 }
 
 .to-basket__list {
   @include zero-spacing;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .to-basket__item {
   @include text(17px,16px,bold);
-  padding: 20px 33px;
+  @include zero-spacing;
+  padding: 20px 37px;
   width: 82px;
   box-sizing: border-box;
   border: 2px solid #ececec;
+}
+
+.to-basket__add {
+  margin-top: 31px;
+  margin-bottom: 46px;
+
+  @include text(17px,16px,bold);
+  display: block;
+  border: none;
+  background-color: #63d1bb;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 20px 16px 20px;
+  box-sizing: border-box;
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .to-basket {
+    width: 566px;
+    margin: 0 auto;
+    border: 1px solid #c7c7c7;
+  }
+
+  .to-basket__wrapper {
+    width: 360px;
+  }
+
+  .to-basket__title {
+    @include text(30px,57px,bold);
+    width: inherit;
+    margin-top: 51px;
+  }
+
+  .to-basket__subtitle {
+    @include text(17px,30px);
+    margin-top: 30px;
+    margin-bottom: 26px;
+  }
+
+  .to-basket__list {
+    width: 350px;
+  }
+
+  .to-basket__item {
+    width: 112px;
+  }
+
+  .to-basket__add {
+    width: 350px;
+  }
 }

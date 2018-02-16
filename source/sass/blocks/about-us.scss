@@ -19,21 +19,78 @@
   list-style: none;
 }
 
+.about-us__item {
+  position: relative;
+  padding-top: 85px;
+}
+
+.about-us__item-icon {
+  position: absolute;
+  top: 30px;
+
+  path {
+    fill: #63d1bb;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 60px;
+    padding-bottom: 82px;
+  }
+
   .about-us__wrapper {
     width: 670px;
   }
 
+  .about-us__title {
+    @include text(43px,50px,bold);
+  }
+
   .about-us__info {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .about-us__item {
+    @include text(20px,22px,bold);
+    padding-top: 100px;
+    width: 300px;
+
+    &--eco,
+    &--heart {
+      width: 220px;
+    }
+
+    &--price,
+    &--gift {
+      width: 240px;
+    }
+  }
+
+  .about-us__item-icon {
+    top: 50px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
   .about-us__wrapper {
     width: 1050px;
     padding-left: 175px;
     box-sizing: border-box;
+  }
+
+  .about-us__title {
+    @include text(53px,57px,bold);
+  }
+
+  .about-us__info {
+    width: 655px;
   }
 }
