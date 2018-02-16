@@ -44,6 +44,7 @@
   }
 
   .order__notice {
+    @include text(17px,30px);
     padding-top: 15px;
   }
 }
@@ -51,5 +52,9 @@
 @media (min-width: $desktop-width) {
   .order__description {
     margin-top: 129px;
+  }
+
+  .order__description {
+    width: 700px;
   }
 }

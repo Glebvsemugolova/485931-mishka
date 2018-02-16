@@ -43,7 +43,7 @@
 
     a {
       @include text(17px,24px,bold);
-      margin: auto 0;
+      margin-top: 24px;
     }
 
     &--catalog {
