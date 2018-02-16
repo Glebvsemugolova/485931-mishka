@@ -27,6 +27,11 @@
     border-right: 1px solid #ececec;
   }
 
+  .page-header__logo-image {
+    width: 112px;
+    height: 46px;
+  }
+
   .page-header__delivery {
     display: block;
     order: 2;
@@ -37,5 +42,12 @@
 @media (min-width: $desktop-width) {
   .page-header__logo {
     text-align: center;
+    padding-top: 9px;
+    padding-bottom: 7px;
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 }

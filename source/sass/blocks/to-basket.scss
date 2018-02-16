@@ -1,8 +1,17 @@
+.to-basket--active {
+  display: block;
+}
+
 .to-basket--hidden {
   display: none;
 }
 
 .to-basket {
+  position: fixed;
+  z-index: 100;
+  background-color: #ffffff;
+  bottom: 120px;
+  left: 30%;
   border-top: 1px solid #c7c7c7;
   border-bottom: 1px solid #c7c7c7;
 }

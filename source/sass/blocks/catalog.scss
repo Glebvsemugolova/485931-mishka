@@ -58,9 +58,14 @@
     justify-content: space-between;
   }
 
+  .catalog__product-image {
+    width: 334px;
+    height: 334px;
+  }
+
   .catalog__info {
     width: 268px;
-    padding: 29px 75px 29px 0;
+    padding: 29px 33px 29px 0;
   }
 
   .catalog__product-title {
@@ -98,7 +103,7 @@
   }
 
   .catalog__product-image {
-    width: 100%;
+    width: 316px;
     height: 462px;
   }
 
