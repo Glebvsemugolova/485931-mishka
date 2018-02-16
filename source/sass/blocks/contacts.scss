@@ -38,6 +38,7 @@
 .contacts__value {
   margin-left: 20px;
   width: 195px;
+
   a {
     color: #444444;
     border-bottom: 2px solid #56c3b2;
@@ -47,6 +48,7 @@
 
 .contacts__map {
   margin-top: 42px;
+
   iframe {
     width: 100%;
   }
@@ -67,6 +69,7 @@
 
   .contacts__title {
     position: relative;
+
     @include text(43px,50px,bold);
   }
 
@@ -133,6 +136,8 @@
 
   .contacts__info {
     @include text(17px,30px);
+    display: block;
+    width: 300px;
   }
 
   .contacts__email {
@@ -145,15 +150,11 @@
 
   .contacts__map {
     margin: 0;
+
     iframe {
       width: 525px;
       height: 457px;
     }
-  }
-
-  .contacts__info {
-    display: block;
-    width: 300px;
   }
 
   .contacts__text {

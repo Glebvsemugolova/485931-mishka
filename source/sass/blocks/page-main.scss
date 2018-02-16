@@ -10,6 +10,7 @@
   width: 272px;
   margin: 0 auto;
   text-align: center;
+
   h1 {
     @include text(27px,30px,bold);
     color: #010000;
@@ -19,11 +20,12 @@
 @media (min-width: $tablet-width) {
   .page-main {
     margin-top: -40px;
-    border-top: 1px solid #ececec;;
+    border-top: 1px solid #ececec;
   }
 
   .page-main__title {
     width: 620px;
+
     h1 {
       @include text(43px,50px,bold);
     }

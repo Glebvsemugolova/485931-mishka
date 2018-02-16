@@ -6,6 +6,7 @@
 .site-list__item {
   text-align: left;
   border-top: 1px solid #ececec;
+
   a {
     color: #000000;
     display: inline-block;
@@ -23,6 +24,7 @@
 
   .site-list__item {
     border: none;
+
     a {
       @include text(15px,24px,bold);
       padding: 0;

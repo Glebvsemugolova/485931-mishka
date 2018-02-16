@@ -2,6 +2,7 @@
   position: relative;
   text-align: left;
   border-top: 1px solid #ececec;
+  
   a {
     color: #000000;
     display: inline-block;
@@ -32,10 +33,12 @@
     display: flex;
     margin-bottom: 13px;
     border: none;
+
     a {
       margin: auto 0;
       padding: 0;
     }
+
     &--search {
       font-size: 0;
       width: 85px;

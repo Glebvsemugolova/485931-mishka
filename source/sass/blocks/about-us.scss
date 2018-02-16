@@ -27,6 +27,7 @@
 .about-us__item-icon {
   position: absolute;
   top: 30px;
+
   path {
     fill: #63d1bb;
   }
@@ -43,7 +44,7 @@
   }
 
   .about-us__title {
-    @include  text(43px,50px,bold);
+    @include text(43px,50px,bold);
   }
 
   .about-us__info {
