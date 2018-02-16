@@ -21,5 +21,3 @@ for (var i = 0; i <buyArray.length; i++) {
   });
 
 }
-
-
