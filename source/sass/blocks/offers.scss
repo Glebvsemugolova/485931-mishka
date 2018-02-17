@@ -3,6 +3,10 @@
   padding-top: 120px;
 }
 
+.offers__background {
+  display: none;
+}
+
 .offers__item {
   list-style: none;
 
@@ -45,7 +49,15 @@
 
 @media (min-width: $tablet-width) {
   .offers {
-    padding-top: 371px;
+    padding-top: 393px;
+    position: relative;
+  }
+
+  .offers__background {
+    position: absolute;
+    display: block;
+    bottom: -18px;
+    width: 100%;
   }
 
   .offers__wrapper {
@@ -86,5 +98,9 @@
 
   .offers {
     padding-top: 265px;
+  }
+
+  .offers__background {
+    bottom: -20px;
   }
 }
