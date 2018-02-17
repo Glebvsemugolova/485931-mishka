@@ -98,7 +98,7 @@
 
   .catalog__item {
     display: block;
-    width: 320px;
+    width: 316px;
     margin: 0;
   }
 
@@ -108,10 +108,32 @@
   }
 
   .catalog__info {
-    padding: 29px 56px 29px 33px;
+    padding: 18px 56px 0px 27px;
+    width: 257px;
+  }
+
+  .catalog__info--big-basket {
+    padding: 18px 56px 24px 27px;
+
+    h3 {
+      width: 240px;
+    }
+
+    span {
+      &:last-child {
+        margin-top: 13px;
+        padding-top: 23px;
+      }
+    }
+  }
+
+  .catalog__product-feature {
+    margin-top: 5px;
+    display: block;
   }
 
   .catalog__product-price {
-    margin-top: 45px;
+    margin-top: 37px;
+    padding-top: 23px;
   }
 }

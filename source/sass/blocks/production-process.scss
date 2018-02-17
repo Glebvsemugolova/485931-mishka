@@ -98,6 +98,12 @@
 
 
 @media (min-width: $desktop-width) {
+  .production-process {
+    padding-bottom: 0;
+    margin-top: 57px;
+    margin-bottom: 96px;
+  }
+
   .production-process__wrapper {
     width: 1050px;
     flex-direction: row;
@@ -105,7 +111,7 @@
 
   .production-process__info {
     width: 230px;
-    margin: 0 auto;
+    margin-left: 78px;
   }
 
   .production-process__video {
@@ -117,15 +123,16 @@
   }
 
   .production-process__description {
-    @include text(15px,24px);
+    @include text(15px,30px);
     width: inherit;
     margin: 0;
   }
 
   .production-process__order {
-    width: inherit;
+    width: 230px;
     margin: 0;
-    margin-top: 50px;
+    margin-left: 2px;
+    margin-top: 44px;
   }
 
   .production-process__title-hidden {
@@ -133,8 +140,8 @@
     position: relative;
     width: inherit;
     margin: 0;
-    margin-top: 100px;
-    margin-bottom: 40px;
+    margin-top: 95px;
+    margin-bottom: 34px;
 
 
     h2 {
@@ -145,7 +152,7 @@
   }
 
   .production-process__icon {
-    left: 0;
-    top: -52px;
+    left: 3px;
+    top: -54px;
   }
 }

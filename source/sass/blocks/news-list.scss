@@ -25,7 +25,7 @@
 @media (min-width: $desktop-width) {
   .news-list {
     @include text(15px,24px,bold);
-    width: 320px;
+    width: 316px;
     display: flex;
     justify-content: space-between;
     order: 2;
