@@ -1,11 +1,15 @@
 .social__list {
-  @include zero-spacing;
   display: flex;
-  list-style: none;
-  min-height: 80px;
+
   align-items: center;
-  width: 141px;
   justify-content: space-between;
+  width: 141px;
+
+  @include zero-spacing;
+  padding-top: 25px;
+  padding-bottom: 11px;
+
+  list-style: none;
 }
 
 .social__link {
@@ -15,8 +19,8 @@
 @media (min-width: $tablet-width) {
   .social {
     display: flex;
-    padding-bottom: 24px;
-    padding-top: 41px;
+    padding-bottom: 36px;
+    padding-top: 33px;
     padding-left: 77px;
   }
 

@@ -1,7 +1,9 @@
 .catalog-main__title {
-  padding: 76px 0 74px 0;
-  background-color: #f1f1f1;
+  padding: 70px 0 75px 0;
+
   text-align: center;
+
+  background-color: #f1f1f1;
 
   h1 {
     @include zero-spacing;
@@ -9,14 +11,27 @@
   }
 }
 
+.catalog-main__background {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-main {
     margin-top: -40px;
+
     border-top: 1px solid #ececec;
   }
 
+  .catalog-main__background {
+    position: absolute;
+    top: 296px;
+
+    display: block;
+    width: 100%;
+  }
+
   .catalog-main__title {
-    padding-top: 105px;
+    padding-top: 96px;
     padding-bottom: 78px;
 
     h1 {
@@ -33,5 +48,9 @@
     h1 {
       @include text(53px,57px,bold);
     }
+  }
+
+  .catalog-main__background {
+    top: 325px;
   }
 }

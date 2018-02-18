@@ -1,11 +1,13 @@
 .order {
   @include text(13px,24px);
   color: #444444;
+
   background-color: #ffffff;
 }
 
 .order-form__list {
   @include zero-spacing;
+
   list-style: none;
 }
 
@@ -20,12 +22,13 @@
 
 .order__description {
   @include zero-spacing;
-  margin-top: 29px;
+  margin-top: 21px;
 }
 
 .order__notice {
-  @include text(14px,16px);
   display: block;
+
+  @include text(14px,16px);
   color: #444444;
 }
 
@@ -35,23 +38,27 @@
   }
 
   .order__description {
-    @include text(17px,30px);
     @include zero-spacing;
+
     width: 670px;
     margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 64px;
+    margin-bottom: 50px;
+
+    @include text(17px,30px);
   }
 
   .order__notice {
+    padding-top: 10px;
+
     @include text(17px,30px);
-    padding-top: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .order__description {
-    margin-top: 129px;
     width: 700px;
+
+    margin-top: 121px;
   }
 }

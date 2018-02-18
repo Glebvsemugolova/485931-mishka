@@ -4,6 +4,7 @@
 
 .news-list__item {
   text-align: left;
+
   border-top: 1px solid #ececec;
 
   a {
@@ -24,10 +25,12 @@
 
 @media (min-width: $desktop-width) {
   .news-list {
-    @include text(15px,24px,bold);
-    width: 316px;
+    order: 2;
+
     display: flex;
     justify-content: space-between;
-    order: 2;
+    width: 316px;
+
+    @include text(15px,24px,bold);
   }
 }
