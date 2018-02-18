@@ -32,7 +32,6 @@
     width: 135px;
 
     @include zero-spacing;
-
     @include text(17px, 24px, bold);
   }
 }
@@ -58,7 +57,6 @@
   margin-left: 36px;
   margin-top: 18px;
   margin-bottom: 24px;
-
 }
 
 .production-process__order {
@@ -197,9 +195,7 @@
       width: 135px;
 
       @include zero-spacing;
-
       @include text(20px, 24px, bold);
-
     }
   }
 

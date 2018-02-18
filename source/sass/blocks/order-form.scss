@@ -11,7 +11,6 @@
 
   h3 {
     @include zero-spacing;
-
     @include text(17px,16px,bold);
     color: #63d1bb;
     text-transform: uppercase;
@@ -230,7 +229,6 @@
       box-sizing: border-box;
 
       @include text(19px,18px);
-
     }
 
     fieldset {
@@ -501,12 +499,6 @@
     }
   }
 
-  .order-form__about-client {
-    label {
-      width: 50px;
-    }
-  }
-
   .order-form__client-item--name {
     input[type="text"] {
       width: 611px;
@@ -530,7 +522,8 @@
     }
   }
 
-  .order-form__telephone-number svg, .order-form__e-mail svg {
+  .order-form__telephone-number svg,
+  .order-form__e-mail svg {
     right: 8px;
   }
 
@@ -545,6 +538,10 @@
 
   .order-form__about-client {
     width: 700px;
+
+    label {
+      width: 50px;
+    }
 
     p {
       display: flex;

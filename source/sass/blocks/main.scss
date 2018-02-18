@@ -8,7 +8,6 @@
 
   h1 {
     @include zero-spacing;
-
     @include text(27px,30px,bold);
   }
 }
