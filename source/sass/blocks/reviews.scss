@@ -7,7 +7,11 @@
 }
 
 .reviews__background {
-  display: none;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -5px;
 }
 
 .reviews__wrapper {
@@ -19,7 +23,8 @@
 .reviews__title {
   @include zero-spacing;
   @include text(25px,30px,bold);
-  padding-top: 60px;
+  padding-top: 55px;
+  padding-bottom: 9px;
 }
 
 .reviews__item {
@@ -28,6 +33,7 @@
 
 .reviews__text {
   color: #444444;
+  margin-bottom: 25px;
 }
 
 .reviews__author-name {
@@ -43,12 +49,13 @@
 .reviews__toggles {
   display: flex;
   border: 1px solid #ececec;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
+  margin-top: 28px;
 }
 
 .reviews__prev,
 .reviews__next {
-  padding: 13px 40px 13px 35px;
+  padding: 12px 42px 9px 38px;
   background-color: #ffffff;
   border: none;
 }
@@ -65,8 +72,8 @@
   .reviews {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    padding-top: 86px;
-    padding-bottom: 110px;
+    padding-top: 77px;
+    padding-bottom: 134px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
@@ -95,8 +102,8 @@
   }
 
   .reviews__list {
-    margin-top: 60px;
-    width: 605px;
+    margin-top: 40px;
+    width: 650px;
   }
 
   .reviews__write {
@@ -108,13 +115,14 @@
 
   .reviews__author-name {
     display: inline-block;
-    margin-top: 35px;
+    margin-top: 32px;
+    font-size: 18px;
   }
 
   .reviews__toggles {
     position: absolute;
-    right: 0;
-    bottom: -34px;
+    right: -21px;
+    bottom: -37px;
     border: none;
   }
 
@@ -134,7 +142,7 @@
 
   .reviews__wrapper {
     width: 1050px;
-    padding-top: 80px;
+    padding-top: 71px;
     padding-left: 175px;
     padding-bottom: 67px;
     box-sizing: border-box;
@@ -153,7 +161,7 @@
 
   .reviews__list {
     margin-bottom: 50px;
-    width: 645px;
+    width: 780px;
   }
 
   .reviews__text {
@@ -161,14 +169,19 @@
   }
 
   .reviews__author-name {
-    margin-top: 45px;
+    margin-top: 38px;
   }
 
   .reviews__toggles {
-    bottom: 75px;
+    bottom: 80px;
+    right: -24px;
   }
 
   .reviews__write {
-    top: 90px;
+    top: 79px;
+  }
+
+  .reviews__background {
+    bottom: -68px;
   }
 }

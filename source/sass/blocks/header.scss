@@ -20,9 +20,9 @@
 @media (min-width: $tablet-width) {
   .page-header__logo {
     padding-top: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     margin-bottom: 13px;
-    width: 320px;
+    width: 322px;
     text-align: left;
     border-right: 1px solid #ececec;
   }
@@ -42,10 +42,10 @@
 @media (min-width: $desktop-width) {
   .page-header__logo {
     text-align: center;
-    padding-top: 1px;
+    padding-top: 9px;
     padding-right: 25px;
     padding-bottom: 2px;
-    width: 326px;
+    width: 327px;
   }
 
   .page-header__logo-image {

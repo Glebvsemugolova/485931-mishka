@@ -18,7 +18,7 @@
   .site-list {
     order: 1;
     display: flex;
-    width: 320px;
+    width: 305px;
     justify-content: space-between;
   }
 
@@ -45,7 +45,7 @@
 
     a {
       @include text(17px,24px,bold);
-      margin-top: 24px;
+      margin-top: 31px;
     }
 
     &--catalog {

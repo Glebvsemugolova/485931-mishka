@@ -25,7 +25,7 @@
   .user-list {
     order: 0;
     display: flex;
-    width: 340px;
+    width: 347px;
     justify-content: space-between;
   }
 
@@ -41,13 +41,14 @@
 
     &--search {
       font-size: 0;
-      width: 85px;
+      width: 82px;
       border-right: 1px solid #ececec;
     }
   }
 
   .user-list__search-icon {
-    left: 36px;
+    left: 33px;
+    top: 36px;
   }
 
   .user-list__icon {
@@ -67,8 +68,13 @@
 
   .user-list__item {
     a {
-      margin-top: 24px;
+      margin-top: 31px;
     }
+  }
+
+  .user-list__search-icon {
+    left: 33px;
+    top: 36px;
   }
 
   .user-list__item--search {

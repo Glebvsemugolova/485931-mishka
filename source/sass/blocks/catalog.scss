@@ -14,13 +14,14 @@
 }
 
 .catalog__info {
-  padding: 32px 27px 30px 28px;
+  padding: 18px 27px 26px 28px;
 }
 
 .catalog__product-title {
   @include zero-spacing;
   @include text(17px,24px,bold);
   color: #000000;
+  padding-bottom: 3px;
 }
 
 .catalog__product-feature {
@@ -30,8 +31,8 @@
 
 .catalog__product-price {
   @include text(15px,24px,bold);
-  margin-top: 25px;
-  padding-top: 25px;
+  margin-top: 20px;
+  padding-top: 20px;
   border-top: 1px solid #ececec;
   display: flex;
   justify-content: space-between;
@@ -53,9 +54,10 @@
   }
 
   .catalog__item {
-    margin-top: 54px;
+    margin-top: 53px;
     display: flex;
     justify-content: space-between;
+    height: 334px;
   }
 
   .catalog__product-image {
@@ -64,12 +66,13 @@
   }
 
   .catalog__info {
-    width: 268px;
-    padding: 29px 33px 29px 0;
+    width: 273px;
+    padding: 25px 33px 29px 0;
   }
 
   .catalog__product-title {
     font-size: 20px;
+    padding-bottom: 8px;
   }
 
   .catalog__product-feature {
@@ -77,8 +80,20 @@
   }
 
   .catalog__product-price {
-    margin-top: 182px;
-    font-size: 17px;
+    margin-top: 173px;
+    font-size: 18px;
+  }
+
+  .catalog__info--big-basket {
+    h3 {
+      width: 200px;
+    }
+
+    span {
+      &:last-child {
+        margin-top: 148px;
+      }
+    }
   }
 }
 
@@ -100,6 +115,7 @@
     display: block;
     width: 316px;
     margin: 0;
+    height: inherit;
   }
 
   .catalog__product-image {
@@ -128,7 +144,7 @@
   }
 
   .catalog__product-feature {
-    margin-top: 5px;
+    margin-top: -3pxpx;
     display: block;
   }
 

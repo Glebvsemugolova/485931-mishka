@@ -1,6 +1,6 @@
 .about-us {
   @include text(17px,20px,bold);
-  padding-top: 34px;
+  padding-top: 68px;
   background-color: #ffffff;
 }
 
@@ -24,6 +24,32 @@
   padding-top: 85px;
 }
 
+.about-us__item--eco {
+  width: 190px;
+}
+
+.about-us__item--price {
+  width: 220px;
+}
+
+.about-us__item--heart {
+  width: 200px;
+}
+
+.about-us__item--knit {
+  padding-top: 80px;
+  width: 220px;
+}
+
+.about-us__item--rocket {
+  width: 255px;
+}
+
+.about-us__item--gift {
+  width: 220px;
+  padding-top: 81px;
+}
+
 .about-us__item-icon {
   position: absolute;
   top: 30px;
@@ -35,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding-top: 60px;
+    padding-top: 65px;
     padding-bottom: 82px;
   }
 
@@ -52,6 +78,10 @@
     justify-content: space-between;
   }
 
+  .about-us__list--second {
+    width: 335px;
+  }
+
   .about-us__item {
     @include text(20px,22px,bold);
     padding-top: 100px;
@@ -66,6 +96,16 @@
     &--gift {
       width: 240px;
     }
+
+    &--price,
+    &--rocket {
+      padding-top: 114px;
+    }
+
+    &--heart,
+    &--gift {
+      padding-top: 111px;
+    }
   }
 
   .about-us__item-icon {
@@ -76,7 +116,7 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    padding-top: 70px;
+    padding-top: 77px;
     padding-bottom: 90px;
   }
 
@@ -88,6 +128,10 @@
 
   .about-us__title {
     @include text(53px,57px,bold);
+  }
+
+  .about-us__list--second {
+    width: 304px;
   }
 
   .about-us__info {

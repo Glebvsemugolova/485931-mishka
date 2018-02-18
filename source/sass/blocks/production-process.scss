@@ -1,18 +1,27 @@
 .production-process {
   @include text(13px,24px);
   margin-top: 30px;
-  padding-bottom: 58px;
+  padding-bottom: 56px;
   color: #444444;
 }
 
 .production-process__wrapper {
+  position: relative;
   width: 260px;
   margin: 0 auto;
   border: 1px solid #ececec;
 }
 
+.production-process__icon-play {
+  position: absolute;
+  cursor: pointer;
+  left: 31%;
+  top: 26%;
+
+}
+
 .production-process__title {
-  padding: 29px 0 26px 90px;
+  padding: 24px 0 26px 90px;
   position: relative;
 
   h2 {
@@ -28,8 +37,8 @@
 
 .production-process__icon {
   position: absolute;
-  left: 33px;
-  top: 33px;
+  left: 36px;
+  top: 31px;
 
   path {
     fill: #63d1bb;
@@ -38,9 +47,10 @@
 
 .production-process__description {
   @include zero-spacing;
-  margin-left: 33px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 0;
+  margin-left: 36px;
+  margin-top: 18px;
+  margin-bottom: 24px;
   width: 192px;
 }
 
@@ -62,6 +72,11 @@
     flex-direction: column;
   }
 
+  .production-process__icon-play {
+    left: 42%;
+    top: 25%;
+  }
+
   .production-process__video {
     order: -1;
     width: 100%;
@@ -70,6 +85,7 @@
 
   .production-process__title {
     padding: 43px 0 28px 105px;
+    display: none;
 
     h2 {
       width: 250px;
@@ -77,16 +93,27 @@
     }
   }
 
+  .production-process__title-hidden {
+    display: block;
+    position: relative;
+    padding: 26px 0 28px 105px;
+
+    h2 {
+      @include zero-spacing;
+    }
+  }
+
   .production-process__icon {
-    left: 40px;
-    top: 40px;
+    left: 43px;
+    top: 22px;
   }
 
   .production-process__description {
     width: 584px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 8px;
+    margin-bottom: 43px;
     margin-left: 40px;
+    font-size: 15px;
   }
 
   .production-process__order {
@@ -101,12 +128,18 @@
   .production-process {
     padding-bottom: 0;
     margin-top: 57px;
-    margin-bottom: 96px;
+    margin-bottom: 102px;
   }
 
   .production-process__wrapper {
     width: 1050px;
     flex-direction: row;
+    height: 454px;
+  }
+
+  .production-process__icon-play {
+    left: 28%;
+    top: 41%;
   }
 
   .production-process__info {
@@ -141,8 +174,9 @@
     position: relative;
     width: inherit;
     margin: 0;
+    padding: 0;
     margin-top: 95px;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
 
 
     h2 {
