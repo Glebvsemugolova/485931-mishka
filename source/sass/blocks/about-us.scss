@@ -1,6 +1,8 @@
 .about-us {
-  @include text(17px,20px,bold);
   padding-top: 68px;
+
+  @include text(17px,20px,bold);
+
   background-color: #ffffff;
 }
 
@@ -11,16 +13,19 @@
 
 .about-us__title {
   @include zero-spacing;
+
   @include text(25px,30px,bold);
 }
 
 .about-us__list {
   @include zero-spacing;
+
   list-style: none;
 }
 
 .about-us__item {
   position: relative;
+
   padding-top: 85px;
 }
 
@@ -83,9 +88,10 @@
   }
 
   .about-us__item {
-    @include text(20px,22px,bold);
     padding-top: 100px;
     width: 300px;
+
+    @include text(20px,22px,bold);
 
     &--eco,
     &--heart {

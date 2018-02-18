@@ -1,13 +1,20 @@
 .user-list__item {
   position: relative;
+
   text-align: left;
+
   border-top: 1px solid #ececec;
 
   a {
-    color: #000000;
     display: inline-block;
     padding: 27px 24%;
+
+    color: #000000;
   }
+}
+
+.user-list__item .user-list__link {
+  position: absolute;
 }
 
 .user-list__icon,
@@ -24,14 +31,16 @@
 @media (min-width: $tablet-width) {
   .user-list {
     order: 0;
+
     display: flex;
-    width: 347px;
     justify-content: space-between;
+    width: 347px;
   }
 
   .user-list__item {
     display: flex;
     margin-bottom: 13px;
+
     border: none;
 
     a {
@@ -40,8 +49,10 @@
     }
 
     &--search {
-      font-size: 0;
       width: 82px;
+
+      font-size: 0;
+
       border-right: 1px solid #ececec;
     }
   }
@@ -58,8 +69,8 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
-    margin: 0;
     width: 347px;
+    margin: 0;
   }
 
   .user-list__icon {

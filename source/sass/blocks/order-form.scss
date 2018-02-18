@@ -1,6 +1,7 @@
 .order-form {
   fieldset {
     margin-top: 31px;
+
     border: none;
   }
 
@@ -10,6 +11,7 @@
 
   h3 {
     @include zero-spacing;
+
     @include text(17px,16px,bold);
     color: #63d1bb;
     text-transform: uppercase;
@@ -21,14 +23,16 @@
   }
 
   input {
+    width: 100%;
+
     @include text(17px,18px);
     color: #c7c7c7;
-    width: 100%;
   }
 
   input[type="text"] {
     padding-top: 13px;
     padding-bottom: 15px;
+
     border: none;
   }
 
@@ -41,15 +45,17 @@
   }
 
   textarea {
-    @include text(17px,18px);
-    font-family: "OpenSans", "Arial", sans-serif;
-    color: #c7c7c7;
     width: 260px;
     min-height: 142px;
     padding: 15px;
     box-sizing: border-box;
-    border: 2px solid #000000;
     resize: none;
+
+    @include text(17px,18px);
+    font-family: "OpenSans", "Arial", sans-serif;
+    color: #c7c7c7;
+
+    border: 2px solid #000000;
   }
 }
 
@@ -101,27 +107,33 @@
   position: absolute;
   top: 3px;
   left: -49px;
+
   width: 15px;
   height: 15px;
+
   background-color: #62d1ba;
   border-radius: 50%;
 }
 
 .order-form__title-radio-btn {
   position: relative;
+
   display: block;
+
   cursor: pointer;
   user-select: none;
 
   &::before {
     content: "";
     position: absolute;
-    width: 35px;
-    height: 35px;
-    border: 2px solid #444444;
-    border-radius: 50%;
     left: -61px;
     top: -9px;
+
+    width: 35px;
+    height: 35px;
+
+    border: 2px solid #444444;
+    border-radius: 50%;
   }
 }
 
@@ -134,8 +146,10 @@
   position: absolute;
   top: -6px;
   left: -56px;
+
   width: 29px;
   height: 24px;
+
   background-image: url(../img/icon-tick.svg);
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -143,18 +157,22 @@
 
 .order-form__title-checkbox {
   position: relative;
+
   display: block;
+
   cursor: pointer;
   user-select: none;
 
   &::before {
     content: "";
     position: absolute;
-    width: 36px;
-    height: 36px;
-    border: 2px solid #444444;
     left: -62px;
     top: -13px;
+
+    width: 36px;
+    height: 36px;
+
+    border: 2px solid #444444;
   }
 }
 
@@ -174,15 +192,18 @@
 .order-form__telephone-number,
 .order-form__e-mail {
   position: relative;
+
   padding-top: 20px;
   padding-bottom: 12px;
+
   border-bottom: 2px solid #000000;
 
   svg {
     position: absolute;
-    fill: #cccccc;
     right: 5px;
     top: 18px;
+
+    fill: #cccccc;
   }
 
   path {
@@ -205,9 +226,11 @@
 @media (min-width: $tablet-width) {
   .order-form {
     textarea {
-      @include text(19px,18px);
       width: 100%;
       box-sizing: border-box;
+
+      @include text(19px,18px);
+
     }
 
     fieldset {
@@ -347,42 +370,47 @@
 
       input[type="tel"],
       input[type="email"] {
-        font-size: 18px;
         padding-left: 15px;
+
+        font-size: 18px;
       }
     }
   }
 
   .order-form__title-radio-btn {
     &::before {
-      width: 48px;
-      height: 48px;
       top: -16px;
       left: -82px;
+
+      width: 48px;
+      height: 48px;
     }
   }
 
   .order-form__radio-btn:checked + label::after {
-    width: 21px;
-    height: 21px;
     top: -2px;
     left: -66px;
+
+    width: 21px;
+    height: 21px;
   }
 
   .order-form__title-checkbox {
     &::before {
-      width: 50px;
-      height: 50px;
       top: -17px;
       left: -82px;
+
+      width: 50px;
+      height: 50px;
     }
   }
 
   .order-form__checkbox:checked + label::after {
-    width: 52px;
-    height: 26px;
     top: -1px;
     left: -69px;
+
+    width: 52px;
+    height: 26px;
   }
 
   .order-form__client-item {
@@ -390,9 +418,10 @@
 
     input[type="text"] {
       padding-top: 0;
-      border-bottom: 2px solid #000000;
       padding-bottom: 13px;
       padding-left: 17px;
+
+      border-bottom: 2px solid #000000;
     }
   }
 
@@ -417,8 +446,9 @@
 @media (min-width: $desktop-width) {
   .order-form {
     input[type="text"] {
-      padding-top: 0;
       width: 573px;
+      padding-top: 0;
+
       border-bottom: 2px solid #000000;
     }
   }
@@ -519,6 +549,7 @@
     p {
       display: flex;
       justify-content: space-between;
+
       border: none;
     }
   }
@@ -528,9 +559,9 @@
   }
 
   .order-form__flex-container--reverse {
-    padding: 0;
-    width: 930px;
     justify-content: flex-end;
+    width: 930px;
+    padding: 0;
     padding-left: 227px;
     margin-top: 40px;
   }

@@ -27,9 +27,10 @@
   }
 
   a {
-    @include text(19px,24px,bold);
     display: flex;
     justify-content: space-between;
+
+    @include text(19px,24px,bold);
     color: #ffffff;
   }
 
@@ -49,14 +50,16 @@
 
 @media (min-width: $tablet-width) {
   .offers {
-    padding-top: 344px;
     position: relative;
+
+    padding-top: 344px;
   }
 
   .offers__background {
     position: absolute;
-    display: block;
     bottom: -18px;
+
+    display: block;
     width: 100%;
   }
 

@@ -1,25 +1,29 @@
 .site-list {
   @include zero-spacing;
+
   list-style: none;
 }
 
 .site-list__item {
   text-align: left;
+
   border-top: 1px solid #ececec;
 
   a {
-    color: #000000;
     display: inline-block;
     padding: 27px 24%;
+
+    color: #000000;
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
     order: 1;
+
     display: flex;
-    width: 305px;
     justify-content: space-between;
+    width: 305px;
   }
 
   .site-list__item {
@@ -35,8 +39,9 @@
 @media (min-width: $desktop-width) {
   .site-list {
     order: -1;
-    margin: 0;
+
     width: 375px;
+    margin: 0;
     margin-bottom: 13px;
   }
 
@@ -44,12 +49,14 @@
     display: flex;
 
     a {
-      @include text(17px,24px,bold);
       margin-top: 31px;
+
+      @include text(17px,24px,bold);
     }
 
     &--catalog {
       width: 185px;
+
       border-right: 1px solid #ececec;
     }
   }

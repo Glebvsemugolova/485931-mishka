@@ -1,22 +1,26 @@
 .contacts {
-  @include text(15px,30px);
-  color: #444444;
-  background-color: #ffffff;
-  padding-bottom: 38px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 38px;
+
+  @include text(15px,30px);
+  color: #444444;
+
+  background-color: #ffffff;
 }
 
 .contacts__wrapper {
   position: relative;
+
   padding-top: 40px;
 }
 
 .contacts__title {
   @include zero-spacing;
+  padding-bottom: 26px;
+
   @include text(18px,30px,bold);
   color: #000000;
-  padding-bottom: 26px;
 }
 
 .contacts__text {
@@ -30,8 +34,8 @@
 
 .contacts__address {
   display: flex;
-  width: 320px;
   justify-content: flex-start;
+  width: 320px;
   padding-top: 30px;
 
   span {
@@ -42,13 +46,14 @@
 }
 
 .contacts__value {
-  margin-left: 26px;
   width: 192px;
+  margin-left: 26px;
 
   a {
-    color: #444444;
     border-bottom: 2px solid #56c3b2;
     padding-bottom: 5px;
+
+    color: #444444;
   }
 }
 
@@ -61,9 +66,9 @@
 }
 
 .contacts__write-us {
+  width: 260px;
   margin: 0 auto;
   margin-top: 29px;
-  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
@@ -79,15 +84,17 @@
 
   .contacts__title {
     position: relative;
+
     padding-bottom: 47px;
 
     @include text(43px,50px,bold);
   }
 
   .contacts__info {
-    @include text(17px,30px);
     display: flex;
     justify-content: space-between;
+
+    @include text(17px,30px);
   }
 
   .contacts__text {
@@ -95,15 +102,17 @@
   }
 
   .contacts__icon {
-    display: block;
     position: absolute;
     top: -15px;
     right: 4px;
+
+    display: block;
   }
 
   .contacts__address {
-    padding: 0;
     width: 336px;
+    padding: 0;
+
     span {
       &:last-child {
         margin-left: 27px;
@@ -126,8 +135,9 @@
 
   .contacts__write-us {
     width: 230px;
-    font-size: 17px;
     margin-top: 44px;
+
+    font-size: 17px;
   }
 }
 
@@ -137,18 +147,19 @@
   }
 
   .contacts__wrapper {
-    margin: 0 auto;
     flex-direction: row;
-    width: 1050px;
     justify-content: space-between;
+    width: 1050px;
+    margin: 0 auto;
+    padding-top: 149px;
     padding-left: 175px;
     box-sizing: border-box;
-    padding-top: 149px;
   }
 
   .contacts__title {
-    @include text(53px,57px,bold);
     padding-bottom: 48px;
+
+    @include text(53px,57px,bold);
   }
 
   .contacts__icon {
@@ -157,9 +168,10 @@
   }
 
   .contacts__info {
-    @include text(17px,30px);
     display: block;
     width: 300px;
+
+    @include text(17px,30px);
   }
 
   .contacts__email {

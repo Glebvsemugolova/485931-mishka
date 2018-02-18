@@ -1,10 +1,12 @@
 .special-offer {
   @include text(15px,20px);
+
   background-color: #ffffff;
 }
 
 .special-offer__wrapper {
   position: relative;
+
   width: 260px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -12,9 +14,10 @@
 
 .special-offer__title {
   @include zero-spacing;
-  @include text(25px,30px,bold);
   padding-top: 28px;
   padding-bottom: 6px;
+
+  @include text(25px,30px,bold);
 }
 
 .special-offer__subtitle {
@@ -25,15 +28,17 @@
 
 .special-offer__description {
   @include zero-spacing;
-  line-height: 24px;
-  color: #444444;
   margin-top: 20px;
   margin-bottom: 23px;
+
+  line-height: 24px;
+  color: #444444;
 }
 
 .special-offer__options {
-  color: #444444;
   padding-bottom: 27px;
+
+  color: #444444;
 }
 
 .special-offer__line {
@@ -54,15 +59,17 @@
 }
 
 .special-offer__price {
-  @include text(17px,24px,bold);
   display: block;
   margin-top: 20px;
+
+  @include text(17px,24px,bold);
   text-align: center;
 }
 
 .special-offer__order {
-  margin-top: 25px;
   width: 260px;
+
+  margin-top: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -73,24 +80,29 @@
   }
 
   .special-offer__header {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
   }
 
   .special-offer__title {
     @include zero-spacing;
+
     @include text(43px,50px,bold);
   }
 
   .special-offer__subtitle {
-    @include text(17px,17px,bold);
-    width: 70px;
-    text-align: center;
     position: absolute;
     top: 12px;
     right: 29px;
+
+    width: 70px;
+
+    @include text(17px,17px,bold);
+
+    text-align: center;
   }
 
   .special-offer__info {
@@ -105,9 +117,10 @@
 
   .special-offer__description {
     @include zero-spacing;
-    @include text(17px,30px);
     width: 300px;
     padding-bottom: 40px;
+
+    @include text(17px,30px);
   }
 
   .special-offer__price-order {
@@ -144,12 +157,13 @@
   }
 
   .special-offer__header {
-    width: 650px;
-    flex-direction: row-reverse;
-    justify-content: space-between;
     position: absolute;
     left: 47px;
     top: 121px;
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 650px;
   }
 
   .special-offer__title {
@@ -166,9 +180,10 @@
   }
 
   .special-offer__description {
-    @include text(17px,30px);
     width: 300px;
     padding-bottom: 50px;
+
+    @include text(17px,30px);
   }
 
   .special-offer__line {

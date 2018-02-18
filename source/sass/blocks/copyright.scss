@@ -1,8 +1,8 @@
 .copyright {
   display: flex;
   align-items: center;
-  width: 182px;
   justify-content: space-between;
+  width: 182px;
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -12,8 +12,9 @@
 }
 
 .copyright__link {
-  font-size: 0;
   display: flex;
+
+  font-size: 0;
 
   svg {
     fill: #63d1bb;

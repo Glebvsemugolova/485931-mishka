@@ -9,49 +9,61 @@
 .to-basket {
   position: fixed;
   z-index: 100;
-  background-color: #ffffff;
   bottom: 120px;
   left: 30%;
-  border-top: 1px solid #c7c7c7;
+
   border-bottom: 1px solid #c7c7c7;
+
+  background-color: #ffffff;
+  border-top: 1px solid #c7c7c7;
 }
 
 .to-basket__wrapper {
   width: 260px;
   margin: 0 auto;
+
   text-align: center;
 }
 
 .to-basket__title {
+  width: 150px;
   @include zero-spacing;
-  @include text(25px,30px,bold);
-  text-transform: uppercase;
   margin: 0 auto;
   margin-top: 36px;
-  width: 150px;
+
+  @include text(25px,30px,bold);
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #c7c7c7;
 }
 
 .to-basket__subtitle {
-  @include text(15px,30px);
   display: block;
   margin-top: 24px;
   margin-bottom: 28px;
+
+  @include text(15px,30px);
   color: #444444;
 }
 
 .to-basket__list {
-  @include zero-spacing;
-  list-style: none;
   display: flex;
   justify-content: space-between;
+
+  @include zero-spacing;
+
+  list-style: none;
 }
 
 .to-basket__item {
-  @include text(17px,16px,bold);
+  width: 82px;
+
   @include zero-spacing;
   padding: 20px 37px;
-  width: 82px;
   box-sizing: border-box;
+
+  @include text(17px,16px,bold);
+
   border: 2px solid #ececec;
 }
 
@@ -61,20 +73,23 @@
 
   @include text(17px,16px,bold);
   display: block;
-  border: none;
-  background-color: #63d1bb;
+  width: 260px;
+  padding: 20px 20px 16px 20px;
+  box-sizing: border-box;
+
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 20px 20px 16px 20px;
-  box-sizing: border-box;
-  width: 260px;
+
+  border: none;
+  background-color: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {
   .to-basket {
     width: 566px;
     margin: 0 auto;
+
     border: 1px solid #c7c7c7;
   }
 
@@ -83,15 +98,17 @@
   }
 
   .to-basket__title {
-    @include text(30px,57px,bold);
     width: inherit;
     margin-top: 51px;
+
+    @include text(30px,57px,bold);
   }
 
   .to-basket__subtitle {
-    @include text(17px,30px);
     margin-top: 30px;
     margin-bottom: 26px;
+
+    @include text(17px,30px);
   }
 
   .to-basket__list {
