@@ -1,6 +1,6 @@
 .main__title {
-  padding-top: 76px;
-  padding-bottom: 80px;
+  padding-top: 69px;
+  padding-bottom: 77px;
   background-color: #f1f1f1;
   text-align: center;
 
@@ -17,12 +17,18 @@
   }
 
   .main__title {
-    padding-top: 104px;
+    padding-top: 93px;
     padding-bottom: 90px;
 
     h1 {
       @include text(43px,50px,bold);
     }
+  }
+
+  .main__background {
+    position: absolute;
+    top: 297px;
+    width: 100%;
   }
 }
 
@@ -34,5 +40,9 @@
     h1 {
       @include text(53px,57px,bold);
     }
+  }
+
+  .main__background {
+    top: 326px;
   }
 }

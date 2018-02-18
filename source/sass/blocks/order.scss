@@ -20,7 +20,7 @@
 
 .order__description {
   @include zero-spacing;
-  margin-top: 29px;
+  margin-top: 21px;
 }
 
 .order__notice {
@@ -39,19 +39,19 @@
     @include zero-spacing;
     width: 670px;
     margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 64px;
+    margin-bottom: 50px;
   }
 
   .order__notice {
     @include text(17px,30px);
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .order__description {
-    margin-top: 129px;
+    margin-top: 121px;
     width: 700px;
   }
 }
