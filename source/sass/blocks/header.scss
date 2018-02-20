@@ -13,6 +13,12 @@
   text-align: center;
 }
 
+.page-header__logo-image {
+  polygon {
+    fill: red;
+  }
+}
+
 .page-header__delivery {
   display: none;
 

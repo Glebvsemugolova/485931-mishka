@@ -8,8 +8,17 @@
   border-top: 1px solid #ececec;
 
   a {
-    color: #000000;
     display: inline-block;
+
+    color: #000000;
+
+    &:hover {
+      color: rgba(0,0,0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0,0,0, 0.3);
+    }
   }
 }
 

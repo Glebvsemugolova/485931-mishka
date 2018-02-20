@@ -28,6 +28,7 @@ if (overlay) {
   overlay.addEventListener("click", function (event) {
     event.preventDefault();
     overlay.classList.remove("to-basket--active");
-    modalContent.classList.remove("to-basket--active");
+    modal.classList.remove("to-basket--active");
+    modal.classList.add("to-basket--hidden");
   });
 }
