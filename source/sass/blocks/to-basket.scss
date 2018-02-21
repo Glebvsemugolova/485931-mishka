@@ -66,6 +66,16 @@
   @include text(17px,16px,bold);
 
   border: 2px solid #ececec;
+
+  cursor: pointer;
+
+  &:focus {
+    border: 2px solid #62d1ba;
+  }
+
+  &:hover {
+    border: 2px solid #c7c7c7;
+  }
 }
 
 .to-basket__add {

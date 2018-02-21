@@ -50,10 +50,20 @@
   margin-left: 26px;
 
   a {
-    border-bottom: 2px solid #56c3b2;
+    border-bottom: 1px solid #56c3b2;
     padding-bottom: 5px;
 
     color: #444444;
+
+    &:hover {
+      color: #46c1ae;
+      border: none;
+    }
+
+    &:active {
+      color: rgba(70,193,174, 0.3);
+      border-bottom: 1px solid rgba(70,193,174, 0.3);
+    }
   }
 }
 

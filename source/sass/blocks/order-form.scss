@@ -25,7 +25,11 @@
     width: 100%;
 
     @include text(17px,18px);
-    color: #c7c7c7;
+
+    &::placeholder {
+      color: #444444;
+      opacity: 0.3;
+    }
   }
 
   input[type="text"] {
@@ -33,6 +37,23 @@
     padding-bottom: 15px;
 
     border: none;
+
+    &:hover {
+      border-bottom: 2px solid #62d1ba;
+
+      &::placeholder {
+        opacity: 0.3;
+      }
+    }
+
+    &:focus {
+      border-bottom: 2px solid #62d1ba;
+      color: #000000;
+
+      &::placeholder {
+        opacity: 0.3;
+      }
+    }
   }
 
   input[type="email"] {
@@ -52,9 +73,29 @@
 
     @include text(17px,18px);
     font-family: "OpenSans", "Arial", sans-serif;
-    color: #c7c7c7;
+    color: #444444;
 
     border: 2px solid #000000;
+
+    &::placeholder {
+      color: #444444;
+
+      opacity: 0.3;
+    }
+
+    &:hover {
+      border: 2px solid #62d1ba;
+    }
+
+    &:focus {
+      border: 2px solid #62d1ba;
+      color: #000000;
+
+      &::placeholder {
+        opacity: 0.3;
+      }
+      opacity: 1;
+    }
   }
 }
 
@@ -99,6 +140,14 @@
 
 .order-form__radio-btn {
   display: none;
+
+  &:hover + label::before {
+    border: 2px solid #6dd4bf;
+  }
+
+  &:active + label::before {
+    border: 2px solid #d0f1ea;
+  }
 }
 
 .order-form__radio-btn:checked + label::after {
@@ -138,6 +187,14 @@
 
 .order-form__checkbox {
   display: none;
+
+  &:hover + label::before {
+    border: 2px solid #6dd4bf;
+  }
+
+  &:active + label::before {
+    border: 2px solid #d0f1ea;
+  }
 }
 
 .order-form__checkbox:checked + label::after {
@@ -207,6 +264,10 @@
 
   path {
     fill: #cccccc;
+  }
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
   }
 }
 
@@ -386,7 +447,7 @@
   }
 
   .order-form__radio-btn:checked + label::after {
-    top: -2px;
+    top: 0;
     left: -66px;
 
     width: 21px;
@@ -566,6 +627,47 @@
   .order-form__telephone-number,
   .order-form__e-mail {
     width: 700px;
+    padding-bottom: 0;
+
+    border: none;
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  .order-form__telephone-number {
+    input[type="tel"] {
+      width: 684px;
+      padding-bottom: 11px;
+
+      border-bottom: 2px solid #000000;
+
+      &:hover {
+        border-bottom: 2px solid #62d1ba;
+      }
+
+      &:focus {
+        border-bottom: 2px solid #62d1ba;
+      }
+    }
+  }
+
+  .order-form__e-mail {
+    input[type="email"] {
+      width: 684px;
+      padding-bottom: 11px;
+
+      border-bottom: 2px solid #000000;
+
+      &:hover {
+        border-bottom: 2px solid #62d1ba;
+      }
+
+      &:focus {
+        border-bottom: 2px solid #62d1ba;
+      }
+    }
   }
 
   .order-form__to-order {

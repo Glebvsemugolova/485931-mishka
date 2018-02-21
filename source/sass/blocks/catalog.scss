@@ -13,6 +13,14 @@
   margin-top: 30px;
 
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.1);
+  }
 }
 
 .catalog__info {
@@ -25,6 +33,30 @@
 
   @include text(17px,24px,bold);
   color: #000000;
+
+  &:hover {
+    color: rgba(0,0,0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0,0,0, 0.3);
+  }
+}
+
+.catalog__buy {
+  &:hover {
+    path {
+      fill: #6dd4bf;
+    }
+  }
+
+  &:active {
+    color: rgba(0,0,0, 0.3);
+
+    path {
+      fill: #d0f1ea;
+    }
+  }
 }
 
 .catalog__product-feature {

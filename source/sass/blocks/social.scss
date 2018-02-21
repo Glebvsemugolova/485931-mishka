@@ -14,6 +14,18 @@
 
 .social__link {
   font-size: 0;
+
+  &:hover {
+    path {
+      fill: #6dd4bf;
+    }
+  }
+
+  &:active {
+    path {
+      fill: #d0f1ea;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

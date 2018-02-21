@@ -11,11 +11,13 @@
   box-sizing: border-box;
 
   text-align: center;
-}
 
-.page-header__logo-image {
-  polygon {
-    fill: red;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

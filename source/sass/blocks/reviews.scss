@@ -67,6 +67,20 @@
 
   background-color: #ffffff;
   border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      fill: rgba(0,0,0, 0.6)
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba(0,0,0, 0.3)
+    }
+  }
 }
 
 .reviews__next {

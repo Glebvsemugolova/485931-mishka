@@ -5,6 +5,7 @@
 
 .offers__background {
   display: none;
+  z-index: 50;
 }
 
 .offers__item {
@@ -105,9 +106,14 @@
 
   .offers__item {
     width: 525px;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s;
+    }
   }
 
   .offers__background {
-    bottom: -20px;
+    bottom: -15px;
   }
 }
