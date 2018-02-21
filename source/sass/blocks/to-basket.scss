@@ -9,9 +9,9 @@
 .to-basket {
   position: fixed;
   z-index: 100;
-  bottom: 120px;
-  left: 30%;
+  bottom: 150px;
 
+  width: 100%;
   border-bottom: 1px solid #c7c7c7;
 
   background-color: #ffffff;
@@ -57,37 +57,46 @@
 }
 
 .to-basket__item {
-  width: 82px;
-
   @include zero-spacing;
-  padding: 20px 37px;
   box-sizing: border-box;
 
   @include text(17px,16px,bold);
 
-  border: 2px solid #ececec;
+  a {
+    display: block;
 
-  cursor: pointer;
+    width: 82px;
+    padding: 16px;
+    box-sizing: border-box;
 
-  &:focus {
-    border: 2px solid #62d1ba;
-  }
+    color: #000000;
 
-  &:hover {
-    border: 2px solid #c7c7c7;
+    border: 2px solid #ececec;
+
+    &:focus {
+      border: 2px solid #62d1ba;
+    }
+
+    &:active {
+      border: 2px solid #62d1ba;
+    }
+
+    &:hover {
+      border: 2px solid #c7c7c7;
+    }
   }
 }
 
 .to-basket__add {
-  margin-top: 31px;
-  margin-bottom: 46px;
-
-  @include text(17px,16px,bold);
   display: block;
+
   width: 260px;
   padding: 20px 20px 16px 20px;
+  margin-top: 31px;
+  margin-bottom: 46px;
   box-sizing: border-box;
 
+  @include text(17px,16px,bold);
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -98,8 +107,11 @@
 
 @media (min-width: $tablet-width) {
   .to-basket {
+    left: 50%;
+    bottom: 400px;
+
     width: 566px;
-    margin: 0 auto;
+    margin-left: -290px;
 
     border: 1px solid #c7c7c7;
   }
@@ -127,10 +139,18 @@
   }
 
   .to-basket__item {
-    width: 112px;
+    a {
+      width: 112px;
+    }
   }
 
   .to-basket__add {
     width: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .to-basket {
+    bottom: 140px;
   }
 }
