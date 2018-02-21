@@ -15,11 +15,11 @@
   border: 1px solid #ececec;
 
   &:hover {
-    box-shadow: 0 6px 10px rgba(0,0,0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0 3px 5px rgba(0,0,0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -35,11 +35,11 @@
   color: #000000;
 
   &:hover {
-    color: rgba(0,0,0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {
-    color: rgba(0,0,0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -51,7 +51,7 @@
   }
 
   &:active {
-    color: rgba(0,0,0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 
     path {
       fill: #d0f1ea;
