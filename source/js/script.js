@@ -32,17 +32,3 @@ if (overlay) {
     modal.classList.add("to-basket--hidden");
   });
 }
-
-
-var burger = document.querySelector(".main-nav__toggle");
-var menu = document.querySelector(".main-nav");
-
-if (burger) {
-  burger.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    burger.classList.remove("main-nav__toggle--opened");
-    burger.classList.add("main-nav__toggle--closed");
-    menu.classList.remove("closed");
-    menu.classList.add("opened");
-  });
-}
