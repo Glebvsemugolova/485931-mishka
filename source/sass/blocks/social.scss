@@ -1,23 +1,42 @@
 .social__list {
-  @include zero-spacing;
   display: flex;
-  list-style: none;
-  min-height: 80px;
+
   align-items: center;
-  width: 141px;
   justify-content: space-between;
+  width: 141px;
+
+  @include zero-spacing;
+  padding-top: 25px;
+  padding-bottom: 11px;
+
+  list-style: none;
 }
 
 .social__link {
   font-size: 0;
+
+  &:hover {
+    path {
+      fill: #6dd4bf;
+    }
+  }
+
+  &:active {
+    path {
+      fill: #d0f1ea;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .social {
     display: flex;
+    padding-bottom: 36px;
+    padding-top: 33px;
+    padding-left: 77px;
   }
 
   .social__list {
-    min-height: 142px;
+    width: 140px;
   }
 }

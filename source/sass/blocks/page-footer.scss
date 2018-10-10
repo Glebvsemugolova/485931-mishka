@@ -15,8 +15,9 @@
 }
 
 .page-footer__container {
-  width: 260px;
   display: flex;
+  width: 260px;
+
   border-top: 2px solid #ececec;
 }
 
@@ -38,6 +39,18 @@
 
   .page-footer__logo {
     display: block;
+
+    &:hover {
+      path {
+        fill: #6dd4bf;
+      }
+    }
+
+    &:active {
+      path {
+        fill: #d0f1ea;
+      }
+    }
   }
 }
 

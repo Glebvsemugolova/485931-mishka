@@ -1,6 +1,11 @@
 .offers {
   margin: 0 auto;
-  padding-top: 120px;
+  padding-top: 104px;
+}
+
+.offers__background {
+  display: none;
+  z-index: 50;
 }
 
 .offers__item {
@@ -10,7 +15,7 @@
     background-color: #63d1bb;
 
     a {
-      padding: 23px 36px 18px 28px;
+      padding: 24px 63px 16px 55px;
     }
   }
 
@@ -18,14 +23,15 @@
     background-color: #56c3b2;
 
     a {
-      padding: 23px 27px 18px 28px;
+      padding: 24px 54px 20px 56px;
     }
   }
 
   a {
-    @include text(19px,24px,bold);
     display: flex;
     justify-content: space-between;
+
+    @include text(19px,24px,bold);
     color: #ffffff;
   }
 
@@ -45,7 +51,17 @@
 
 @media (min-width: $tablet-width) {
   .offers {
-    padding-top: 371px;
+    position: relative;
+
+    padding-top: 344px;
+  }
+
+  .offers__background {
+    position: absolute;
+    bottom: -18px;
+
+    display: block;
+    width: 100%;
   }
 
   .offers__wrapper {
@@ -58,7 +74,7 @@
   }
 
   .offers__item {
-    flex-grow: 1;
+    width: 334px;
 
     a {
       @include text(20px,30px,bold);
@@ -81,10 +97,40 @@
 @media (min-width: $desktop-width) {
   .offers__wrapper {
     width: 1050px;
-    padding-top: 70px;
+    padding-top: 60px;
   }
 
   .offers {
     padding-top: 265px;
+  }
+
+  .offers__item {
+    width: 525px;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s;
+
+      path {
+        fill: #29a592;
+      }
+    }
+
+    &:active {
+      transform: translateY(-5px);
+      transition: all 0.3s;
+
+      a {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      path {
+        fill: #44c0aa;
+      }
+    }
+  }
+
+  .offers__background {
+    bottom: -15px;
   }
 }

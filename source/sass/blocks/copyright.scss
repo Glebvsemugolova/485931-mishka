@@ -1,9 +1,10 @@
 .copyright {
   display: flex;
-  min-height: 80px;
   align-items: center;
-  width: 182px;
   justify-content: space-between;
+  width: 182px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .copyright__text {
@@ -11,11 +12,28 @@
 }
 
 .copyright__link {
-  font-size: 0;
   display: flex;
+
+  font-size: 0;
 
   svg {
     fill: #63d1bb;
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+
+    path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    path {
+      fill: #d0f1ea;
+    }
   }
 }
 

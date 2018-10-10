@@ -1,13 +1,19 @@
 .main__title {
-  padding-top: 76px;
-  padding-bottom: 80px;
-  background-color: #f1f1f1;
+  padding-top: 69px;
+  padding-bottom: 77px;
+
   text-align: center;
+
+  background-color: #f1f1f1;
 
   h1 {
     @include zero-spacing;
     @include text(27px,30px,bold);
   }
+}
+
+.main__background {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,12 +23,20 @@
   }
 
   .main__title {
-    padding-top: 104px;
+    padding-top: 93px;
     padding-bottom: 90px;
 
     h1 {
       @include text(43px,50px,bold);
     }
+  }
+
+  .main__background {
+    position: absolute;
+    top: 297px;
+
+    display: block;
+    width: 100%;
   }
 }
 
@@ -34,5 +48,9 @@
     h1 {
       @include text(53px,57px,bold);
     }
+  }
+
+  .main__background {
+    top: 326px;
   }
 }

@@ -1,13 +1,36 @@
 .user-list__item {
   position: relative;
+
   text-align: left;
+
   border-top: 1px solid #ececec;
 
   a {
-    color: #000000;
     display: inline-block;
     padding: 27px 24%;
+
+    color: #000000;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+
+      path {
+        fill: #6dd4bf;
+      }
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      path {
+        fill: #d0f1ea;
+      }
+    }
   }
+}
+
+.user-list__item .user-list__link {
+  position: absolute;
 }
 
 .user-list__icon,
@@ -24,14 +47,16 @@
 @media (min-width: $tablet-width) {
   .user-list {
     order: 0;
+
     display: flex;
-    width: 340px;
     justify-content: space-between;
+    width: 347px;
   }
 
   .user-list__item {
     display: flex;
     margin-bottom: 13px;
+
     border: none;
 
     a {
@@ -40,14 +65,17 @@
     }
 
     &--search {
+      width: 82px;
+
       font-size: 0;
-      width: 85px;
+
       border-right: 1px solid #ececec;
     }
   }
 
   .user-list__search-icon {
-    left: 36px;
+    left: 33px;
+    top: 36px;
   }
 
   .user-list__icon {
@@ -57,6 +85,7 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
+    width: 347px;
     margin: 0;
   }
 
@@ -66,7 +95,16 @@
 
   .user-list__item {
     a {
-      margin-top: 24px;
+      margin-top: 31px;
     }
+  }
+
+  .user-list__search-icon {
+    left: 33px;
+    top: 36px;
+  }
+
+  .user-list__item--search {
+    width: 83px;
   }
 }
